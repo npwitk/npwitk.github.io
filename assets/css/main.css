@@ -2,7 +2,9 @@ body{
     color: #835A03;
     background-color: #FCAD00;
 }
-
+.mydiv {
+    font-family: "SF Pro Text"
+}
 @font-face {
 	font-family:'SF Pro Display';
 	font-style:normal;
@@ -329,9 +331,6 @@ body{
 	src:url('apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_medium.eot');
 	/* (C) 2019 Apple Inc. All rights reserved.
  */
-}
-.mydiv {
-    font-family: "SF Pro Text"
 }
 @font-face {
 	font-family:'SF Pro Text';
