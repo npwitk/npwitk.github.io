@@ -8,7 +8,7 @@ color: #835A03;
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 body {
-background-color: #835A03;
+background-color: #473002;
 color: #FCAD00;
         }
     }
