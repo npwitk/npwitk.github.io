@@ -1,7 +1,18 @@
-body{
-    color: #835A03;
-    background-color: #FCAD00;
-}
+/* Light mode */
+@media (prefers-color-scheme: light) {
+body {
+background-color: #FCAD00;
+color: #835A03;
+        }
+    }
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+body {
+background-color: #835A03;
+color: #FCAD00;
+        }
+    }
+
 .mydiv {
     font-family: "SF Pro Text"
 }
