@@ -1,25 +1,51 @@
 <html>
-<head>
-<style>
-  
-body {top: 0; left: 0; width: 99%; height: 97%;
-position: absolute; display: table}
-p {display: table-cell; vertical-align: middle; text-align: center; line-height: 1.5}
+  <head>
+    <meta charset="utf-8"/>
+	<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <title>Freaky Firebase Example</title>
+  </head>
+  <body>
+    <h1>Freaky Firebase Realtime Database Example</h1>
+	
+	<pre id='object'></pre>
+	
+	
+	<script>
+	  (function(){
+	  
+	  
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAHazjgvPu-dvxXTBTbhmG_8yPH1GkVpvs",
+		authDomain: "xamioproject.firebaseapp.com",
+		databaseURL: "https://xamioproject-default-rtdb.firebaseio.com",
+		projectId: "xamioproject",
+		storageBucket: "xamioproject.appspot.com",
+		messagingSenderId: "771289394227"
+	  };
+	  firebase.initializeApp(config);
+	  
+	   /* Data Event Listeners Start */
+     const preObject = document.getElementById('object');
+const dbRefObject = firebase.database().ref().child('object');
 
-</style>
-</head>
-<body class="mydiv">
-<title>Nonprawich I.</title>
-<p>
+dbRefObject.on('value', snap => {
 
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-<font size="7"><b>NONPRAWICH I.</b></font> <br>
-<i>Hello, World!<i>
-<br>
-<a href="info" style="color: white; text-decoration: none;">about me</a> |
-<a href="contact" style="color: white; text-decoration: none;">contact</a>
-</p>
-</body>  
+	console.log(snap.val());	
+	preObject.innerText = JSON.stringify(snap.val(), null, 3);
+
+}, function(error) {
+  // The fetch failed.
+  console.error(error);
+});
+	  
+	  
+	   /* Stop */
+	  
+	  
+	  }());
+	</script>
+	
+	
+  </body>
 </html>
