@@ -1,50 +1,52 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-	<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
-    <title>Freaky Firebase Example</title>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <title>Xamio Project Database</title>
   </head>
   <body>
-    <h1>Freaky Firebase Realtime Database Example</h1>
-	
-	<pre id='object'></pre>
-	
-	
+    
+    <h1>Xamio Project Dashboard</h1>
+    <p>Number of students</p>
+
+
+
+    <div id="root"> </div>
+
 	<script>
-	  (function(){
 	  
-	  
-	  // Initialize Firebase
-	  var config = {
+	  var firebaseConfig = {
 		apiKey: "AIzaSyAHazjgvPu-dvxXTBTbhmG_8yPH1GkVpvs",
 		authDomain: "xamioproject.firebaseapp.com",
 		databaseURL: "https://xamioproject-default-rtdb.firebaseio.com",
 		projectId: "xamioproject",
 		storageBucket: "xamioproject.appspot.com",
-		messagingSenderId: "771289394227"
+		messagingSenderId: "771289394227",
+    appId: "1:771289394227:web:2c4aa734c8a88e026b4746",
 	  };
-	  firebase.initializeApp(config);
 	  
-	   /* Data Event Listeners Start */
-     const preObject = document.getElementById('object');
-const dbRefObject = firebase.database().ref().child('object');
+    firebase.initializeApp(firebaseConfig);
+    var firebaseRef = firebase.database().ref("entrydata") 
+    firebaseRef.on("value" , function(snapshot){ 
+      snapshot.forEach(function(element){
+        console.log(element.val());
+        document.querySelector('#root').innerHTML += `
+          <div>${element.val().name}</div> `
+    })
 
-dbRefObject.on('value', snap => {
+    
 
-	console.log(snap.val());	
-	preObject.innerText = JSON.stringify(snap.val(), null, 3);
 
-}, function(error) {
-  // The fetch failed.
-  console.error(error);
-});
+
+
+    
+  });
+  </script>
 	  
 	  
-	   /* Stop */
 	  
-	  
-	  }());
-	</script>
+	
 	
 	
   </body>

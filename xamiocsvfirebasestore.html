@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Xamio Project Table</title>
+</head>
+<body>
+<div class="container mt-3">
+  <table class="table">
+    <thead>
+      <th>No.</th>
+      <th>Time</th>
+      <th>Student Id</th>
+      <th>Name</th>
+      <th>Body Temperature</th>
+    </thead>
+    <tbody id="tbody1">
+  
+    </tbody>
+  </table>
+</div>
+
+<script type="module">
+  //Filling Table
+  var stdNo = 0;
+  var tbody = document.getElementById('tbody1');
+
+  function AddItemToTable(timelog,stdID,stdName,stdTemp){
+  let trow = document.createElement("tr");
+  let td1 = document.createElement('td');
+  let td2 = document.createElement('td');
+  let td3 = document.createElement('td');
+  let td4 = document.createElement('td');
+  let td5 = document.createElement('td');
+
+  td1.innerHTML=++stdNo;
+  td2.innerHTML=timelog;
+  td3.innerHTML=stdID;
+  td4.innerHTML=stdName;
+  td5.innerHTML=stdTemp;
+
+  trow.appendChild(td1);
+  trow.appendChild(td2);
+  trow.appendChild(td3);
+  trow.appendChild(td4);
+  trow.appendChild(td5);
+
+  tbody.appendChild(trow);
+  }
+
+
+  function AddAllItemsToTable(TheStudent){
+    stdNo=0
+    tbody.innerHTML="";
+    TheStudent.forEach(element => {
+      AddItemToTable(element.time, element.student_id, element.name, element.body_temp); //ต้องเหมือนกับในเว็บ
+    });
+  }
+
+
+  //Import Config
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAHazjgvPu-dvxXTBTbhmG_8yPH1GkVpvs",
+    authDomain: "xamioproject.firebaseapp.com",
+    databaseURL: "https://xamioproject-default-rtdb.firebaseio.com",
+    projectId: "xamioproject",
+    storageBucket: "xamioproject.appspot.com",
+    messagingSenderId: "771289394227",
+    appId: "1:771289394227:web:2c4aa734c8a88e026b4746",
+    measurementId: "G-RXH8K07CPR"
+  };
+  const app = initializeApp(firebaseConfig);
+
+  import { 
+    getFirestore, doc, getDoc, getDocs, onSnapshot, collection
+  }
+  from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
+  const db = getFirestore();
+
+
+//Get data
+
+  async function GetAllDataRealtime(){
+    const dbRef = collection(db,"entrydata");
+
+    
+    onSnapshot(dbRef,(querySnapshot) => {
+      var students = [];
+
+      querySnapshot.forEach(doc => {
+        students.push(doc.data());
+      });
+      AddAllItemsToTable(students);
+    })
+
+  }
+
+
+  window.onload = GetAllDataRealtime;
+
+
+</script>
+
+
+</body>
+</html>
