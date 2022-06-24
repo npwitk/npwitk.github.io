@@ -1,0 +1,673 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>อารยธรรมของโลกยุคโบราณ</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="67a89a44-c170-43eb-9390-4deb5f8069f5" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1646146775038-152e8b8d3ba4?ixlib=rb-1.2.1&amp;q=80&amp;cs=tinysrgb&amp;fm=jpg&amp;crop=entropy" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/hieroglyph.png"/></div><h1 class="page-title">อารยธรรมของโลกยุคโบราณ</h1></header><div class="page-body"><p id="7729c1c3-10ad-477d-8773-647d49fd342c" class=""><strong>Table of Contents:</strong></p><nav id="03af5915-89a4-4d64-a404-f57f524e56f7" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1a013741-4651-46b1-a6eb-b6c8cd3aca84">อารยธรรม Mesopotamia</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3075632c-95fc-471b-aa2f-42d091dbbfa2">The Sumerians</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#25dda5b4-7667-4459-8f3f-468c9cbea94f">The Amorites (Kingdom of Babylon)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#92d58fe9-fccb-4aff-82c1-87a66d53a2b8">The Hittites</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#58a8e7eb-f7e3-49dd-95f7-bf5a65676615">The <strong>Assyrians</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#4201e1b8-e64e-4dbc-9840-6dac2b74cd0b">The Chaldeans</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#e0d896ea-22fe-4baf-bfda-2482445f8fec">อาณาจักรเล็กใน Asia Minor</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#7a6b3387-3a54-4640-b540-879db0e99256">The Phoenician</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#94010c42-7a1d-409f-858d-de60d35b5300">The Hebrews</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#65302d2a-bea8-48e0-a85b-95b0a563e6b6">The Persians</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#4ebdfe67-8b4e-4655-994f-4a44abb09be5">อารยธรรมลุ่มแม่น้ำไนล์ (<strong>Ancient Egypt</strong>)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3707b0b5-c895-4fbc-a1b9-13a585274cab">ปัจจัยทางภูมิศาสตร์</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#ddeb4a54-a2d7-4557-9267-182541688316">ประวัติความเป็นมาของ Egypt</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#b29adc98-aa73-49e5-a62f-b8429b1dd55e">สมัยอาณาจักรเก่าหรือสมัยพีระมิด 2630-2151 BC</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#fe3f713a-098d-4b3d-83c7-0e1ef95912fe">สมัยอาณาจักรกลาง 2050-1652 BC</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#6467b400-68ee-4c47-9a0c-72f280100b6a">สมัยอาณาจักรใหม่ 1550-1000 BC</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3e8120ee-039a-40bf-8e2a-abb0d3fc11ad">ปัจจัยส่งเสริมการหล่อหลอมอารยธรรมอียิปต์</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#63723311-296f-4b7b-b489-469ff08c8847">อารยธรรมกรีก (Ancient Greek)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#6ceb5100-69e2-4338-9c73-05d438d196e6">ปัจจัยทางภูมิศาสตร์กับการตั้งถิ่นฐาน</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#ec32812e-bf92-456a-ac9d-30d6557a5165">ภาคเหนือ</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#40ffb9c8-06da-41b4-bf6c-b9fcae62937d">ภาคกลาง</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#c708b3e4-90a7-4bce-9ccb-a4c4400ed9c8">ภาคใต้</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e6a9ae2e-cb21-43db-ae86-13875e88c6d2">อารยธรรมกรีกสมัยก่อนประวัติศาสตร์</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1949dfeb-fb73-4564-a28d-17a43976122a">อารยธรรมกรีกสมัยประวัติศาสตร์</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#9a2766fe-6d0c-4e1c-abd3-ff1eae0d51a0">Minoan Civilisation (อารยธรรมไมนวน)</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#e92e652c-0650-4ef6-a219-cdbf67c7ed67">Mycenaean Civilisation (อารยธรรมไมซีเน)</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#39ad4a1c-ded5-4b69-a6ab-ee92a500da53">Hellenistic Civilisation (อารยธรรมเฮเลน/กรีก)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#0736e687-e21b-4001-80b4-4917cf07adaa">มรดกของอารยธรรมกรีก</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#3948cf79-538f-4f73-883c-16a8611e7117">Architecture<mark class="highlight-gray"> (สถาปัตยกรรม)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#d980904c-4a6f-4474-a5ea-d09939b47c87">Sculpture<mark class="highlight-gray"> (ประติมากรรม)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#9645f4dd-5e91-491d-b161-5baa437e3a3b">Painting <mark class="highlight-gray">(จิตรกรรม)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#078e1f6b-308e-49de-af9a-6153a706598f">Drama <mark class="highlight-gray">(นาฏกรรม)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#378dd201-acf9-4773-8d34-85982157bce1">Literature <mark class="highlight-gray">(วรรณกรรม)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#be519fc5-34da-4134-b665-fd8f991ca0b9">Mathematics <mark class="highlight-gray">(คณิตศาสตร์)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#fa650226-4f96-4354-859d-805c729a0842">Physics <mark class="highlight-gray">(ฟิสิกส์)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#7330d2dc-a059-4181-b85b-e889a90cbd3a">Medicine <mark class="highlight-gray">(การแพทย์)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#e4874b46-c0f6-4118-86b9-d55b47ff438d">Geography <mark class="highlight-gray">(ภูมิศาสตร์)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#b5e64c54-2737-490c-bccb-eec14c283f7e">History <mark class="highlight-gray">(ประวัติศาสตร์)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#5d96d297-e409-41ef-9af1-74f7a4ec0d96">Olympic Games <mark class="highlight-gray">(การแข่งขันกีฬาโอลิมปิก)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#c87f2ff5-0c81-4b89-b403-e6c1ba01ce7a">แนวคิดประชาธิปไตยทางตรง</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#42cde765-2856-47c2-8298-74cbcddf14a1"><strong>อารยธรรมโรมัน (Ancient Rome)</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#14e900a4-76aa-4887-aa34-c34ee48a3cbe">ปัจจัยทางภูมิศาสตร์กับการตั้งถิ่นฐาน</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#ad39b9d3-2d7b-4be1-812a-a7e76e818125">การขยายอำนาจของโรมัน (ประวัติความเป็นมา)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1feb7bb9-3175-4d0e-94a1-76964cd4acf6">ปัจจัยที่ส่งเสริมการขยายอำนาจของจักรวรรดิโรมัน</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#53d823e3-5cb4-43ad-8af8-a5a79f5086a1">สมัยสาธารณรัฐ</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e0b7e5bc-259e-4295-8cd8-dbc0e28cf46d">สมัยจักรวรรดิ</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#63790bb0-b9a5-435d-8fd6-f823c6b194ae">มรดกของอารยธรรมโรมัน</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#e1491740-b115-4f1e-8cc8-db83fc3ae991">Architecture<mark class="highlight-gray"> (สถาปัตยกรรม)</mark></a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#40d3afe5-798d-4ac7-87ab-6a607f21e667">ประติมากรรม</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#1c98e746-6a3b-4bda-8ff7-475ea96bca71">วรรณกรรม</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#28c87f1c-5b0e-453c-b3d5-b1f11fd3e75c">วิศวกรรม</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#bab578c6-58cb-4a23-ad37-bd50c295f84a">ปฏิทิน</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#7f7a6b1d-ee29-416e-a1c9-84c44017da21">กฎหมาย</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#e8d05f9a-3445-482e-87b9-e869a6a9ce4b">ภาษาละติน</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#7004aa6e-c351-405f-a03e-f84d3074bd3e">การแพทย์</a></div></nav><hr id="15791242-89e7-4e57-9364-eb4c9df31754"/><h1 id="1a013741-4651-46b1-a6eb-b6c8cd3aca84" class="block-color-red_background">อารยธรรม Mesopotamia</h1><figure id="c314364d-3bf3-45ee-b695-6d107dc2d624"><a href="https://youtu.be/W3554Z7um9o" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">อารยธรรมเมโสโปเตเมีย : สังคม สนุกคิด (25 ธ.ค. 63)</div><div class="bookmark-description">วันนี้พี่วิวจะพาทุกคนไปท่องเที่ยวแหล่งอารยธรรมที่เก่าแก่ที่สุดแห่งหนึ่งของโลกสมัยโบราณ &quot;อารยธรรมเมโสโปเตเมีย&quot; แล้วสนุกกันต่อกับการผจญภัยที่ขั้วโลก จะหนาวขนาด...</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/48993c9a/img/favicon.ico" class="icon bookmark-icon"/>https://youtu.be/W3554Z7um9o</div></div><img src="https://i.ytimg.com/vi/W3554Z7um9o/hqdefault.jpg" class="bookmark-image"/></a></figure><p id="238f9940-9411-46e7-83bb-38d04087cd20" class=""><span style="border-bottom:0.05em solid"><strong>เรียกได้ 3 แบบ</strong></span></p><ol type="1" id="5708528b-c6e7-42e7-97f6-ddaafe76555d" class="numbered-list" start="1"><li>อารยธรรม Mesopotamia</li></ol><ol type="1" id="3a8dd68e-9446-419b-990f-5b8064bfbdd8" class="numbered-list" start="2"><li>ดินแดนพระจันทร์เสี้ยวแห่งความอุดมสมบูรณ์ (Fertile Crescent)</li></ol><ol type="1" id="85d9cb09-de1d-4acc-9f8b-c407484de86b" class="numbered-list" start="3"><li>อารยธรรมลุ่มน้ำ Tigris-Eufrates</li></ol><figure id="691db12f-c28d-47ae-93b7-fe60f4420fdb" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/ancient-mesopotamian.jpg"><img style="width:480px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/ancient-mesopotamian.jpg"/></a></figure><p id="98645f87-a586-4f9d-8b99-609608aea3e2" class=""><span style="border-bottom:0.05em solid"><strong>ลักษณะชุมชนที่ตั้งถิ่นฐานใน อารยธรรม Mesopotamia</strong></span></p><ul id="d216cbb2-2eae-44b5-8e1a-e0f8acf8dffe" class="bulleted-list"><li style="list-style-type:disc">The Sumerians (3200 - 2300 BC)</li></ul><ul id="44fc2889-f989-4ab2-9b59-d5a68496f1b9" class="bulleted-list"><li style="list-style-type:disc">The Amorites (จักรวรรดิบาบิโลเนีย) (2000 - 1600 BC)</li></ul><ul id="721009df-cb87-4958-8b76-a5d87a60fd02" class="bulleted-list"><li style="list-style-type:disc">The Hittites (1500 - 1300 BC)</li></ul><ul id="9ea5b0ea-9f9c-49b3-86e9-e16fcf7e01bc" class="bulleted-list"><li style="list-style-type:disc">The Assyrians (จักรวรรดิอัสซีเรีย) (1300 - 612 BC)</li></ul><ul id="ab18e22a-627b-4d17-a2e8-d7f0af1eb43c" class="bulleted-list"><li style="list-style-type:disc">The Chaldeans (จักรวรรดิคาลเดียหรือบาบิโลเนียใหม่) (612 - 539 BC)</li></ul><p id="0c61328e-0526-45fa-be7d-6e65c3ed2462" class=""><span style="border-bottom:0.05em solid"><strong>อาณาจักรเล็กใน Asia Minor (1200 - 700 BC)</strong></span></p><ul id="f2b07df4-10ec-454a-adff-20d9a4d5d797" class="bulleted-list"><li style="list-style-type:disc">The Phoenician</li></ul><ul id="e5dc518a-750b-4163-b8d0-5f5394a2a266" class="bulleted-list"><li style="list-style-type:disc">The Hebrews</li></ul><ul id="4a63fe24-b6b5-4fdb-bff3-41906a19e5ce" class="bulleted-list"><li style="list-style-type:disc">The Persians</li></ul><h2 id="3075632c-95fc-471b-aa2f-42d091dbbfa2" class="">The Sumerians</h2><ol type="1" id="8694d6c0-db15-472d-afb1-f5ac658c4b3f" class="numbered-list" start="1"><li>ประดิษฐ์อักษรลื่มบนดินเหนียว หรือเรียกว่า “Cuneiform”<p id="af8dd18a-4eab-402e-a407-9fa8fc9bf4c0" class="">เขียนเกี่ยวกับพวกศาสนา, การจัดเก็บภาษี (รายรับ-รายจ่าย)</p></li></ol><ol type="1" id="46a69e93-3749-4c46-aca6-46ceeb6d3dc8" class="numbered-list" start="2"><li>สร้างศาสนสถานขนาดใหญ่เรียกว่า Ziggurat</li></ol><ol type="1" id="8a1b516d-cf68-43ba-b229-ab4de319730b" class="numbered-list" start="3"><li>คิดค้นระบบชลประทานเป็นพวกแรก</li></ol><ol type="1" id="d76433fd-3bed-407f-9032-f386cb6cb62e" class="numbered-list" start="4"><li>วรรณกรรมสำคัญ คือ มหากาพย์กิลกาเมซ (กล่าวถึงน้ำท่วมโลก)</li></ol><ol type="1" id="858c0415-99de-420e-b4d2-0799b472fa09" class="numbered-list" start="5"><li>ประดิษฐจานหมุน ถือเป็นเครื่องกลชนิดแรกของโลก</li></ol><ol type="1" id="1db35386-b3b1-42d9-b8cf-027bce49b40e" class="numbered-list" start="6"><li>มีความเจริญด้านคณิตศาสตร์<p id="a1183d7f-dd45-40d8-8b23-831b509e4f9b" class="">คิดค้น <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span></span><span>﻿</span></span>, นำเลขฐาน 60 มาใช้ทำปฏิทิน การชั่ง ตวง วัด</p></li></ol><ol type="1" id="addfa642-324f-4dcc-aa01-545b7f2c17e3" class="numbered-list" start="7"><li><strong>แบ่งเป็นส่วนย่อย ๆ ได้ ปกครองแบบนครรัฐ (ข้อสอบออกบ่อย)</strong></li></ol><div id="7312b494-4aac-4d1e-b77c-14e0c513998d" class="column-list"><div id="1d6ef7a2-7e8c-4de6-afa7-b6f54d310b5f" style="width:12.5%" class="column"><figure id="6d60c30e-6dcb-44dd-8571-85480737707d" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Sumerian_account_of_silver_for_the_govenor_(background_removed).png"><img style="width:192px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Sumerian_account_of_silver_for_the_govenor_(background_removed).png"/></a><figcaption>Cuneiform</figcaption></figure></div><div id="36890242-2136-441d-924b-bb41971dec7d" style="width:87.5%" class="column"><figure id="738346d7-0c91-412b-ae2d-8f2d1fff5bae" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Nasiriyah_banner_Ziggurat_of_Ur-2.png"><img style="width:2100px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Nasiriyah_banner_Ziggurat_of_Ur-2.png"/></a><figcaption>Ziggurat</figcaption></figure></div></div><h2 id="25dda5b4-7667-4459-8f3f-468c9cbea94f" class="">The Amorites (Kingdom of Babylon)</h2><p id="fe1c5833-acf6-417f-bca1-6635fae6cefd" class="">รวมศูนย์อำนาจ ปกครองโดย King</p><ul id="8d9c96c4-be73-4236-8ba4-090264423b27" class="bulleted-list"><li style="list-style-type:disc">พวก Amorites รวมตัวกันตั้ง Kingdom of Babylon</li></ul><ul id="9c9f5aed-a937-4c19-bc08-fc9cded58bc7" class="bulleted-list"><li style="list-style-type:disc">เป็นอาณาจักรที่เข้มแข็ง ปกครองแบบรวมศูนย์ เก็บภาษี และเกณฑ์ทหาร เป็นรัฐสวัสดิการ</li></ul><ul id="1eb73519-b785-434f-9c9a-a790298ef5b4" class="bulleted-list"><li style="list-style-type:disc">ผลงานสำคัญ คือ ประมวลกฎหมายของพระเจ้าฮัมบูราบี<ul id="4aaad7ce-a3bd-4519-8432-958f6ce53cfe" class="bulleted-list"><li style="list-style-type:circle"><em>ทำไมถึงเป็นอารยธรรมชิ้นสำคัญ? </em></li></ul></li></ul><ul id="a122931c-afd3-4510-afdb-2fdb45a813e0" class="bulleted-list"><li style="list-style-type:disc">หลักการตาต่อตา ฟันต่อฟัน ทดทนความผิดด้วยการกระทำอย่างเดียวกัน<p id="67ce720d-050d-48de-9e30-fe7cda834583" class="">เช่น ไปตัดแขนคนอื่น ก็ต้องโดนตัดแขนเป็นโทษ</p></li></ul><ul id="a835e7d6-e715-4ff4-a601-9afeb6a81ed5" class="bulleted-list"><li style="list-style-type:disc">กฏหมายแรกที่คิดถึงสิทธิสตรี (อนุญาตให้ภรรยาฟ้องหย่าได้)</li></ul><figure id="5284285b-c201-4631-89ff-b7f6169d243b" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Milkau_Oberer_Teil_der_Stele_mit_dem_Text_von_Hammurapis_Gesetzescode_369-2.png"><img style="width:192px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Milkau_Oberer_Teil_der_Stele_mit_dem_Text_von_Hammurapis_Gesetzescode_369-2.png"/></a></figure><h2 id="92d58fe9-fccb-4aff-82c1-87a66d53a2b8" class="">The Hittites</h2><p id="61c358cd-c229-44ef-9600-0ed0a6fd29a5" class="">เป็นชนชาติแรกที่รู้จักเหล็ก</p><ul id="8f0c58b8-ad9f-435c-9308-2d1d6fe4f746" class="bulleted-list"><li style="list-style-type:disc">มาจากทะเลดำ รุกรานพวก Babylonia</li></ul><ul id="dacb7152-0208-469d-afc5-8bc2d06951b4" class="bulleted-list"><li style="list-style-type:disc">สามารถประดิษฐ์อาวุธด้วยเหล็ก ใช้ม้ารถในการรบ</li></ul><ul id="f972c195-4a4a-4a94-ad6e-cc87c2ff9d24" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>กฎหมายไม่นิยมใช้ความรุนแรง แต่ให้ชดเชยค่าปรับแทน</strong></span> (ตรงข้ามกับอันบนเลย)</li></ul><p id="9e6d5715-6a6d-4a0f-b0cc-afad10bc42aa" class="">
+</p><figure id="d77e4351-202f-4552-89e3-00bd70c14afc" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/PikPng.com_roman-soldier-png_1971392.png"><img style="width:336px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/PikPng.com_roman-soldier-png_1971392.png"/></a></figure><h2 id="58a8e7eb-f7e3-49dd-95f7-bf5a65676615" class="">The <strong>Assyrians</strong></h2><p id="48d7b0e9-7e6c-408e-ae77-8cd27e8d5c59" class="">King ปกครองแบบรวมศูนย์</p><ul id="6c007973-e0e2-4ecb-981f-45feab5cf8ba" class="bulleted-list"><li style="list-style-type:disc">เป็นนักรบที่กล้าหาญ มีวินัย ก้าวหน้าทางการทหาร</li></ul><ul id="4deaed37-74aa-42dd-a2c1-c6b760c3df7b" class="bulleted-list"><li style="list-style-type:disc">ยืดครอง Kingdom of Babylon และขยายอาณาเขตมากมาย (จนทำให้ดินแดนเป็นรูปพระจันทร์เสี้ยว)</li></ul><ul id="fdeadec7-f0ac-4ddd-b3f5-e94e7c2bee43" class="bulleted-list"><li style="list-style-type:disc">มีศูนย์กลางที่เมือง Nineveh</li></ul><ul id="a885f4fd-218f-4968-b8e0-5b9fdd223973" class="bulleted-list"><li style="list-style-type:disc">เชื่อว่ากษัตริย์เป็นตัวแทนเทพเจ้า (God King) นิยมสร้างวังให้ใหญ่โตกว่าศาสนสถาน</li></ul><ul id="a120a7da-a02b-4687-9b08-5d845301d0c7" class="bulleted-list"><li style="list-style-type:disc"><strong>มรดกศิลปกรรม คือการสลักภาพนูนต่ำ (ภาพที่โดดเด่น: ภาพสิงโตมีปีกหัวเป็นมนุษย์)</strong></li></ul><ul id="b98ca5f0-96af-41f0-9d8b-162a0462fdbb" class="bulleted-list"><li style="list-style-type:disc"><strong>สมัยที่เจริญสุด ๆ คือ พระเจ้า Assurbanipal รวบรวมงานเขียนจารึกต่าง ๆ ไว้ที่หอสมุดเมือง Nineveh </strong></li></ul><ul id="83f9ad94-80a5-4a7e-af65-7ec68999d4bf" class="bulleted-list"><li style="list-style-type:disc">อารยธรรมสำคัญ คือ ระบบการปกครองจักรวรรดิที่เข้มแข็ง ควบคุมดินแดนใต้ปกครองโดยสร้างถนนเชื่อมกัน</li></ul><figure id="8db21c36-5120-40d5-a5a2-1d6f480b39b0" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/DP110698.png"><img style="width:288px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/DP110698.png"/></a></figure><h2 id="4201e1b8-e64e-4dbc-9840-6dac2b74cd0b" class="">The Chaldeans</h2><ul id="3b0f81ae-d693-416c-8ade-b0b5ebb3027c" class="bulleted-list"><li style="list-style-type:disc">เป็นพวกเซไมต์อยู่ทาง ตะวันออก/ใต้ ของลุ่มน้ำ Tigris-Eufrates</li></ul><ul id="827739bd-dcc9-4d5c-9a09-43a7a3f96488" class="bulleted-list"><li style="list-style-type:disc">สร้าง Kingdom of Babylon ใหม่</li></ul><ul id="43cc2fec-923b-4195-8def-73248783be2f" class="bulleted-list"><li style="list-style-type:disc">สมัยพระเจ้า Nebuchadnezzar ทรงฟื้นฟูกฎหมายและวรรณกรรมของ Babylonia <strong><mark class="highlight-red">(กวาดต้อนชาวยิวมาเป็นเชลย) คืออะไร?</mark></strong></li></ul><ul id="0d6fbd4d-3ee9-4a81-b98d-b8c8db732531" class="bulleted-list"><li style="list-style-type:disc">สร้าง สวนลอยแห่ง Babylon นับเป็น 1 ใน 7 สิ่งมหัศจรรย์ของโลกยุคโบราณ สะท้อนความรู้ด้านชลประทาน</li></ul><ul id="412ea147-ca4b-4261-980e-9fcf86580515" class="bulleted-list"><li style="list-style-type:disc">สร้าง Ziggurat ขนาดใหญ่ เรียกว่า <strong>“หอคอยแห่งบาเบล (Tower of Babel)”</strong> ปรากฎใน Bible</li></ul><ul id="195522f8-d92f-4a7f-9917-301622290f9d" class="bulleted-list"><li style="list-style-type:disc">มีความเจริญทางดาราศาสตร์ แบ่งสัปดาห์เป็น 7 วัน วันละ 12 คาบ คาบละ 120 นาที<p id="16326081-a871-4d3b-a42c-7693c8532ad0" class="">คำนวณสุริยุปราคา การโคจรรอบดวงอาทิตย์ นำความรู้ทางดาราศาตร์ หรือ โหราศาสตร์ทำนายโชคชะตาเป็นชาติแรก</p></li></ul><figure id="4ef0cdc5-e3f5-4485-a38b-02a88f0d8360" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/kisspng-babylon-tower-of-babel-deviantart-tour-5ac75a3d22a527.5601391615230142051419.png"><img style="width:240px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/kisspng-babylon-tower-of-babel-deviantart-tour-5ac75a3d22a527.5601391615230142051419.png"/></a><figcaption>หอคอยแห่งบาเบล (Tower of Babel)</figcaption></figure><p id="3a7a7693-67e3-4ad9-9776-69cff0fbac1b" class="">สิ้นสุด อ. Masopothemia เมื่อเปอร์เซียรุกราน</p><hr id="48ce592e-e6de-43c6-a880-de48cac10a59"/><h1 id="e0d896ea-22fe-4baf-bfda-2482445f8fec" class="block-color-red_background">อาณาจักรเล็กใน Asia Minor</h1><p id="66c00ae3-0830-4468-af44-a1ba674b61c3" class="">(1200 - 700 BC)</p><figure id="0bbef89e-8c38-48d6-b11d-d980162bae24"><a href="https://youtu.be/Ywb3Ae0oUKA" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">ep6 Phoenicia | อารยธรรมฟินิเชียน (เลบานอน ซีเรีย อิสราเอล เซเมติก ยุคโบราณ)-ประวัติศาสตร์โลกฉบับย่อ</div><div class="bookmark-description">ประวัติศาสตร์ #ตะวันออกกลาง #เลบานอน #เมโสโปเตเมีย #ซีเรีย #อิสราเอล #ยุคโบราณ #History Little Class: A Brief History (ประวัติศาสตร์โลกฉบับย่อ) by Pujana P...</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/5ab5196f/img/favicon.ico" class="icon bookmark-icon"/>https://youtu.be/Ywb3Ae0oUKA</div></div><img src="https://i.ytimg.com/vi/Ywb3Ae0oUKA/hqdefault.jpg" class="bookmark-image"/></a></figure><h2 id="7a6b3387-3a54-4640-b540-879db0e99256" class="">The Phoenician</h2><p id="56283ea9-1af3-444c-8260-66e3c3b356b8" class="">ชื่อดั้งเดิมเรียกว่า The Canaanites, The Carthages (ไปตั้ง Captial ที่เมือง Carthage) — ประเทศเลบานอน (ปัจจุบัน)</p><ul id="dbce8509-a321-4cf9-ac41-5c413ead7d60" class="bulleted-list"><li style="list-style-type:disc">เป็นชาว Semitic ชื่อเดิมเรียกว่า The Canaanites อาศัยแถบ Syria-Palestine ถูกรุกรานจนเหลือดินแดนแถบชั่งฝั่งทะเล Mediterranean ถูกเรียกว่า Phoenician (ปัจจุบันคือประเทศ Lebanon)</li></ul><ul id="1498a2d8-7a2a-4c7f-861a-53acfefc78f7" class="bulleted-list"><li style="list-style-type:disc">มีความสามารถในการเดินทะเล ต่อเรือ ค้าขายทางทะเล เป็นพ่อค้าคนกลาง เพราะไม่มีที่ดินเพาะปลูกจึงเป็นอาชีพพวกนี้</li></ul><ul id="2cfc5cd1-fcae-4280-b020-1956674e73ea" class="bulleted-list"><li style="list-style-type:disc">จัดตั้งอาณานิคมบนเกาะ Sicily และชายฝั่งตอนเหนือของ Africa ได้แก่เมือง Carthage</li></ul><ul id="2ae8d4f4-db0e-46db-b468-49a67b72134d" class="bulleted-list"><li style="list-style-type:disc">นำวัฒนธรรมไปเผยแพร่ยังที่ต่าง ๆ</li></ul><ul id="583a8547-0446-46c3-805f-bc2a8e20aa94" class="bulleted-list"><li style="list-style-type:disc">เจอคนเยอะเยะจึงมีการพัฒนาตัวอักษรจาก<strong>พวก Egypt </strong>และ Sumerians เป็นอักษร Alphabet โดยมี Greek &amp; Roman นำไปใช้ต่อ จนเป็นต้นตระกูลของอักษร Alphabet ในปัจจุบัน</li></ul><figure id="b94bb583-4aef-4b27-b56a-8ab0a1eac3f7" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Phoenician_abjad.svg.png"><img style="width:480px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Phoenician_abjad.svg.png"/></a></figure><h2 id="94010c42-7a1d-409f-858d-de60d35b5300" class="">The Hebrews</h2><p id="37555e15-c126-42c7-9140-5d74a0c5eb0f" class="">ชาวฮีบรู ชาวยิว ชาวอิสราเอล</p><ul id="2981839f-5b7e-47d5-a875-1a0fa9925c37" class="bulleted-list"><li style="list-style-type:disc">บรรพบุรุษ คือ อับราฮัม (อยู่บริเวณ Mesopotamia ตอนเหนือ) แล้วก็ประสบความแห้งแล้ง อดอยาก จึงอพยพไปที่ Egypt — กลายเป็นว่าถูกใช้งานอย่างหนัก เป็นเชลย แล้วพระเจ้าให้คนมาช่วยเหลือ คือ Moses ก็พาชนชาติยิวกลับมายังดินแดน Canaan (คานันอัน) หรือ Palestine ในปัจจุบัน โดยเชื่อว่าเป็นดินแดนที่พระเจ้าประทานให้</li></ul><ul id="e68fc959-3e98-4252-8737-50e32b8676ea" class="bulleted-list"><li style="list-style-type:disc">ต่อมาตกเป็นทาสของชาว Chaldeans (Mesopotamia) ต่อมาก็ตกอยู่ในปกครองของ เปอร์เซีย กรีก โรมัน ตามลำดับ</li></ul><ul id="4ca0ac1d-b81c-4df8-81f8-2f7f41ebe0b6" class="bulleted-list"><li style="list-style-type:disc">มรดกที่สำคัญ คือ ศาสนายิว (Judaism) นับถือพระเยโฮวาห์ (Jehovah) และมีพระคัมภีร์พันธสัญญาเดิมเป็นคัมภีร์ศักดิ์สิทธิ์</li></ul><ul id="820da04a-1d82-4706-851a-8d149def4d01" class="bulleted-list"><li style="list-style-type:disc">พระผู้ช่วยให้รอดของชาว Hebrews คือมาในรูปของนักรบ เลยไม่ค่อยเชื่อพระเยซู</li></ul><ul id="8636c447-2973-48f4-adf8-b8c841fbf80e" class="bulleted-list"><li style="list-style-type:disc">ในปี ค.ศ. 1945 มีการเจรจาของตั้งรัฐ Israel โดยขบวนการยิวพลักถิ่น ทำให้เกิดปัญหาแย่งที่ดิน ระหว่าง ชาว Israel vs ชาว Palestine เรียกว่า<strong> “สงครามปาเลสไตน์ (Palestine war)” </strong><p id="09328088-886d-4862-ba9c-17afdebb9a51" class="">ได้ตั้งเป็นประเทศ Israel ภายหลัง WWII</p></li></ul><figure id="92505b23-cb64-488d-8fcd-2803970365d8" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/1200px-Flag_of_Israel.svg.png"><img style="width:240px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/1200px-Flag_of_Israel.svg.png"/></a></figure><h2 id="65302d2a-bea8-48e0-a85b-95b0a563e6b6" class="">The Persians</h2><p id="e20d596d-0863-4a3b-8f6c-5713e1718a0f" class="">ปัจจุบันก็คือชาว Iran</p><ul id="571e4435-4a16-40a0-8514-a8d434662e6b" class="bulleted-list"><li style="list-style-type:disc">รับอารยธรรมของชนชาติอื่น ๆ</li></ul><ul id="134d8696-0099-4dd0-b2f2-bd5616b02df8" class="bulleted-list"><li style="list-style-type:disc">เชื้อสาย Indo-european บริเวณทะเลดำ ค่อย ๆ ยึดครอง อ. Chaldea</li></ul><ul id="a7830d44-cf16-430f-9030-a8b7c9a80e1a" class="bulleted-list"><li style="list-style-type:disc">ขยายดินแดนไปกว้างไกลถึง Egypt สมัยพระเจ้าดาริอุสมหาราช</li></ul><ul id="525a9aee-f9e5-4ea4-9218-22de2e55a5b6" class="bulleted-list"><li style="list-style-type:disc"><strong>มีศาสนาเป็นของตนเอง คือ Zoroastrianism (ศาสนาโซโรอัสเตอร์) ซึ่งสอนเรื่องความดีความชั่ว</strong><p id="3f4819cc-98ae-42ca-a458-c37c362969e9" class="">ความดี = แสงสว่าง // ความชั่ว = ความมืด</p></li></ul><ul id="cb87cb27-28f7-4af7-9397-456836991e89" class="bulleted-list"><li style="list-style-type:disc">ล่มสลายไปในสมัยพระเจ้า Alexander มหาราชของ Greek</li></ul><figure id="8f1d8ccb-28da-4f0a-a932-f9e20a2a3f8d" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/pngwing.com-3.png"><img style="width:336px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/pngwing.com-3.png"/></a></figure><hr id="0fb5932d-d72e-473e-aa00-82c7d9616f1a"/><h1 id="4ebdfe67-8b4e-4655-994f-4a44abb09be5" class="block-color-red_background">อารยธรรมลุ่มแม่น้ำไนล์ (<strong>Ancient Egypt</strong>)</h1><figure id="7d7a3406-66db-4be4-8b6e-84a404c7b391"><a href="https://youtu.be/3qQL4CUCF9Q" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">อียิปต์โบราณ : สังคม สนุกคิด (6 พ.ย. 63)</div><div class="bookmark-description">พี่วิว จะพาน้อง ๆ ไปรู้จักอียิปต์โบราณ ไปสนุกกับการเลือกประเภทของหิน มาทำลายป้อมปราการของผีดิบ และไปรู้จักมหาพีระมิดแห่งกีซ่า ความสนุกทั้งหมดนี้อยู่ในสังคมสน...</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/dd76c683/img/favicon.ico" class="icon bookmark-icon"/>https://youtu.be/3qQL4CUCF9Q</div></div><img src="https://i.ytimg.com/vi/3qQL4CUCF9Q/hqdefault.jpg" class="bookmark-image"/></a></figure><figure id="aba829b6-198d-42e5-97bd-1c8d341ce203"><a href="https://youtu.be/UD6QDjQFSwk" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">10 ตำนานลึกลับ ของอารยธรรมอียิปต์โบราณ</div><div class="bookmark-description">อารยธรรมอียิปต์โบราณ หรือ &quot;ไอยคุปต์&quot; คือหนึ่งในอารยธรรมที่มีความเก่าแก่มากที่สุดอารยธรรมหนึ่งของโลก เป็นอารยธรรมที่มีเรื่องราวต่างๆ เกิดขึ้นมากมาย แถมยังเป็น...</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/6b582218/img/favicon.ico" class="icon bookmark-icon"/>https://youtu.be/UD6QDjQFSwk</div></div><img src="https://i.ytimg.com/vi/UD6QDjQFSwk/hqdefault.jpg" class="bookmark-image"/></a></figure><div id="cb28185b-2c00-4171-af9e-dafbd8b3bc86" class="column-list"><div id="6af23f9d-0d91-459a-903c-ce5be0e6e0ec" style="width:56.25%" class="column"><figure id="4498ede4-7446-4d8f-aaef-21cc2fcc63c4" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_595119281.jpg"><img style="width:6327px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_595119281.jpg"/></a></figure></div><div id="8b16bf7d-f4de-4aa2-adaa-1bd5919e6e35" style="width:43.74999999999999%" class="column"><figure id="e9fa11f1-09bc-4b50-bb6f-def0cff57295" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_338422760.jpg"><img style="width:2244px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_338422760.jpg"/></a></figure></div></div><ul id="a548c82a-df04-4c25-8aec-ef3977cfefcf" class="bulleted-list"><li style="list-style-type:disc"><strong>Lower Egypt (อียิปต์ล่าง)</strong><ul id="65caa6c0-0d91-4486-a0fc-72a78cdff4de" class="bulleted-list"><li style="list-style-type:circle">มีความอุดมสมบูรณ์</li></ul><ul id="51fb03cc-41f0-4329-a6de-39643c1065cf" class="bulleted-list"><li style="list-style-type:circle">เพาะปลูกดี</li></ul></li></ul><ul id="829ce301-2972-42da-9e51-fb9baaf59fc5" class="bulleted-list"><li style="list-style-type:disc"><strong>Upper Egypt (อียิปต์บน)</strong><ul id="70c0245b-52e9-497f-8eff-127df6e02ad8" class="bulleted-list"><li style="list-style-type:circle">แห้งแล้ง</li></ul></li></ul><p id="6f25b990-353a-4fd9-a228-84472c12613b" class="">อารยธรรมนี้อยู่ใกล้กับ Mesopotamia หากคนที่จะเข้าไปตีจะไปตี Mesopotamia ได้ง่ายกว่า เพราะพื้นที่เป็นลักษณะเปิดโล่ง มีหลายชนชาติอยู่อาศัย <span style="border-bottom:0.05em solid">แต่ Egypt ก็เคยโดนโจมตีบ้างแต่ว่าน้อย</span></p><h2 id="3707b0b5-c895-4fbc-a1b9-13a585274cab" class="">ปัจจัยทางภูมิศาสตร์</h2><ul id="32e14b51-5133-4eef-a0d3-3863c4371e12" class="bulleted-list"><li style="list-style-type:disc">Egypt เป็นของขวัญของแม่น้ำไนล์ (Egypt is the gift of the Nile) <strong>Herodotus ได้กล่าวไว้</strong></li></ul><ul id="a3629a90-8b2d-4735-a75d-e3b4a9ad634b" class="bulleted-list"><li style="list-style-type:disc">บริเวณที่ Fertile คือ Lower Egypt ตั้งอยู่ที่ราบ Nile River&#x27;s mouth (= Mediterranean Sea) ทำให้เกิดเดลตา หรือดินดอนรูปพัด อารยธรรมต่าง ๆ เกิด ณ ที่นี้</li></ul><ul id="3678ae03-d8f0-4be6-b704-303857f13260" class="bulleted-list"><li style="list-style-type:disc">Upper Egypt คือ บริเวณที่แม่น้ำ Nile ไหลผ่าน เป็นที่ราบแคบ ๆ ขนาบด้วยหน้าผาและทะเลทราย (ไม่ค่อยมีคนอาศัย)</li></ul><ul id="8dbe140b-43ef-4159-97d8-e055aa7c7597" class="bulleted-list"><li style="list-style-type:disc">ภูมิอากาศเป็นแบบทะเลทราย ฝนตกน้อย แห้งแล้ง</li></ul><ul id="22b3e947-a530-4a3d-bde8-acd8ea8bb2de" class="bulleted-list"><li style="list-style-type:disc">ภูมิประเทศของ Egypt ล้อมรอบด้วยทะเลทรายและทะแล ทำให้ปลอดจากการรุกราน ต่างจาก Mesopotamia ที่เปิดโล่ง</li></ul><ul id="97ba4d4a-f65c-43d4-83e1-16063fd2a43e" class="bulleted-list"><li style="list-style-type:disc">Egyptians ใช้การแบ่งที่ดินที่เพาะปลูกได้แก่ประชาชนอย่างทั่วถึง ทำให้เกิดการทำชลประทานและการจัดสรรที่ดิน ช่วยให้ Egypt ตั้งถิ่นฐานอยู่ในดินแดนที่แห้งแล้งได้อย่าวยาวนานโดยไม่ละทิ้งถิ่นฐาน</li></ul><ul id="cb0e6ac7-c2aa-43ac-a090-6848719cc265" class="bulleted-list"><li style="list-style-type:disc">Nile River ยาวถึง 6,690 km บริเวณที่ราบลุ่มแม่น้ำมีดินสีดำ เรียกว่า Kemet แปลว่า แผ่นดินสีดำ ต่อมา Greeks เรียกดินแดนนี้ว่า Egypt</li></ul><ul id="be70ad86-79ff-4887-9e83-7406053d7832" class="bulleted-list"><li style="list-style-type:disc">Egypt รวมกันได้ในสมัย Pharaoh (King) Menes ประมุขแห่ง Upper Egypt ได้รวบรวม Egypt ทั้งสองไว้ด้วยกัน</li></ul><ul id="17de26eb-71bf-4bd1-825d-323a844dc838" class="bulleted-list"><li style="list-style-type:disc">รูปแบบอารยธรรม Mesopotamia เป็นวัฒนธรรมเมือง แต่ของอียิปต์เป็นวัฒนธรรมจักรวรรดิ (รวมศูนย์อำนาจ) ปกครองต่อเนื่อง 28 ราชวงค์</li></ul><h2 id="ddeb4a54-a2d7-4557-9267-182541688316" class="">ประวัติความเป็นมาของ Egypt</h2><p id="521cbaf7-870a-4eb9-864d-f25cc29c8003" class="">แบ่งเป็น 3 สมัย</p><h3 id="b29adc98-aa73-49e5-a62f-b8429b1dd55e" class="">สมัยอาณาจักรเก่าหรือสมัยพีระมิด 2630-2151 BC</h3><div id="745fae75-5792-44c3-b898-45b81d5692c2" class="column-list"><div id="43dbda48-3759-42cf-b7e7-00e3a4dfd2f3" style="width:75%" class="column"><ul id="7e3c11f0-6b1b-4868-b6a1-b2d56ddec5ea" class="bulleted-list"><li style="list-style-type:disc">เจริญด้านวิทยาศาสตร์ ก่อสร้างปิรามิดโดยใช้หินแกรนิตและหินทราย บันทึกเรื่องราวศาสนาและฟาโรห์โดยใช้ต้นปาปิรุส</li></ul><ul id="6ad5345c-e007-46a4-904f-ffb625431b8b" class="bulleted-list"><li style="list-style-type:disc">ฟาโรห์ (Pharoh)มีฐานะเป็น God-King ควบคุมทุกอย่าง มีอำนาจสูงสุด วจนะของฟาโรห์ คือ กฎหมาย</li></ul><ul id="4925539d-deac-43cf-a1c3-3a4fe3603d2f" class="bulleted-list"><li style="list-style-type:disc">การสร้าง Pyramid เพื่อเก็บพระศพ มีความเชื่อว่า ฟาโรห์ทรงเป็นพระเจ้า การทำมัมมี่เพื่อให้ผู้ตาย โดยเฉพาะฟาโรห์มีชีวิตนิรันดร์และเยาว์วัยตลอดกาล</li></ul><ul id="70adea5c-766f-4045-9124-2d91a96d5402" class="bulleted-list"><li style="list-style-type:disc"><strong>ความเชื่อในเรื่องชีวิตอมตะ</strong> หรือ ฟื้นคืนชีพ เกิดจากการเห็นธรรมชาติ ในฤดูแล้ง พืชพันธุ์ต่าง ๆ จะแห้งเหี่ยวล้มตาย แต่เมื่อถึงฤดูน้ำหลากพืชพันธุ์ต่าง ๆ ก็จะงอกงาม หรือ การเห็นดวงอาทิตย์ขึ้นลงในแต่ละวัน เป็นกลางวันและกลางคืน<ul id="619c1bb0-dac0-454a-8390-c959546f2b84" class="bulleted-list"><li style="list-style-type:circle">มีเทพ Osiris เป็นต้นของการฟื้นคืนชีพ</li></ul></li></ul></div><div id="a6bdcbe8-144b-47c8-8685-c2cb4fcbb949" style="width:25.000000000000007%" class="column"><figure id="ab02c03d-e3f3-45e9-ab9f-162cb27ff656" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/orsis.png"><img style="width:240px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/orsis.png"/></a><figcaption>Osiris</figcaption></figure></div></div><h3 id="fe3f713a-098d-4b3d-83c7-0e1ef95912fe" class="">สมัยอาณาจักรกลาง 2050-1652 BC</h3><ul id="af6eaae2-63d8-4a00-8d78-e9e9d1a9fd11" class="bulleted-list"><li style="list-style-type:disc">ได้รับการยกย่องว่าเป็น ยุคแห่งวิทยาการและภูมิปัญญา โดยเฉพาะชลประทาน ประชาชนไม่นิยมสร้าง Pyramid ขนาดใหญ่อีกต่อไป แต่ยังคงสร้างวิหารบูชาเทพเจ้าอื่น ๆ ต่อไป<figure id="db2314f4-e8f1-4c87-bdf1-343a0e7ddd83" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled.png"><img style="width:384px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled.png"/></a></figure></li></ul><ul id="e0d1c824-c5a0-4cff-b625-c516a1ac3adc" class="bulleted-list"><li style="list-style-type:disc">ประชาชนมีสิทธิทำมัมมี่ได้</li></ul><ul id="36ac5ae9-80eb-4d07-9be4-66e5fa585daf" class="bulleted-list"><li style="list-style-type:disc">มีการสร้างสถาปัตยกรรมขนาดใหญ่ เพื่อบูชาเทพ</li></ul><ul id="32c9cdd5-8c68-4646-9246-6e96606d7fd7" class="bulleted-list"><li style="list-style-type:disc">สภาพสังคมประกอบด้วยเกษตรกรและทาส</li></ul><h3 id="6467b400-68ee-4c47-9a0c-72f280100b6a" class="">สมัยอาณาจักรใหม่ 1550-1000 BC</h3><div id="088815ef-879c-4be8-8406-77be10eafdda" class="column-list"><div id="b95f461f-a2c3-4148-851c-9b2f6a07fb50" style="width:56.25%" class="column"><ul id="69a9bd12-51ba-4fdc-ab64-1dd95cb94960" class="block-color-red bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>ยุคทองของอียิปต์</strong></mark></li></ul><ul id="679fc343-0d64-42e4-b851-f034dd43bfcb" class="bulleted-list"><li style="list-style-type:disc">ฟาโรต์ Akhenaten พยายามปฏิรูปศานา โดยเปลี่ยนแปลงแนวคิด<span style="border-bottom:0.05em solid">นับถือพระเจ้าหลายองค์มาเป็นองค์เดียว</span> คือ สุริยเทพ Aton ทำให้ขัดแย้งกับนักบวช นำมาสู่ความเสื่อม</li></ul><ul id="bcff2aca-6dad-4b7c-a2c8-3def486bbf3f" class="bulleted-list"><li style="list-style-type:disc">ปี 670-654 — Egypt ถูก Assyrians<strong> </strong>ยึดครองตามด้วย Persians, Greek, Roman ตามลำดับ<ul id="6b90d73e-35da-4caf-9103-8c75097c03b6" class="bulleted-list"><li style="list-style-type:circle">ตอน Egypt อยู่ภายใต้ <strong><em>?Greek?</em></strong> มีคนสวย ๆ คือ Cleopatra</li></ul></li></ul><ul id="86890c7a-c8e6-426f-93c0-35d9547d979f" class="bulleted-list"><li style="list-style-type:disc">C.17 อียิปต์หันไปนับถือศาสนาอิสลาม</li></ul></div><div id="ab41a109-3544-4dc1-a22c-0d2a35fa573a" style="width:43.75000000000001%" class="column"><figure id="11483dba-f837-4532-9250-4b13b5413efb" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/879dce0d-f282-4f63-ab6c-a5c7b281927a.png"><img style="width:576px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/879dce0d-f282-4f63-ab6c-a5c7b281927a.png"/></a><figcaption>Cleopatra</figcaption></figure></div></div><h2 id="3e8120ee-039a-40bf-8e2a-abb0d3fc11ad" class="">ปัจจัยส่งเสริมการหล่อหลอมอารยธรรมอียิปต์</h2><ul id="8bc13c97-8f94-41c6-8d7f-d5244f1603ff" class="bulleted-list"><li style="list-style-type:disc"><strong>ปัจจัยทางภูมิศาสตร์</strong><ul id="d634e268-0c19-42fb-b128-d1b9ee357933" class="bulleted-list"><li style="list-style-type:circle">รุกรานยาก</li></ul><ul id="e498e0a4-996a-40cd-8264-b81308ee5ccb" class="bulleted-list"><li style="list-style-type:circle">มีทะเล/ทะเลทราย เป็นปราการ</li></ul></li></ul><ul id="78a332a1-1f87-44d2-ae28-ea6668599341" class="bulleted-list"><li style="list-style-type:disc"><strong>ทรัพยากรธรรมชาติ</strong><ul id="491935e7-6140-4fcf-a710-8154cd1b2201" class="bulleted-list"><li style="list-style-type:circle">อุดมสมบูรณ์ เพราะมี Nile River</li></ul></li></ul><ul id="0955f391-bb6c-4081-badd-4a46108811e4" class="bulleted-list"><li style="list-style-type:disc"><strong>ระบอบการปกครอง</strong><ul id="a14b61c2-2691-440d-affd-d3edf1314626" class="bulleted-list"><li style="list-style-type:circle">ปกครองแบบรวมศูนย์อำนาจ</li></ul></li></ul><ul id="16916025-7c2a-4997-9aed-e4b798b2ce04" class="bulleted-list"><li style="list-style-type:disc"><strong>ภูมิปัญญาของชาวอียิปต์</strong><ul id="b91f650b-735d-42db-8730-d6153a9432e4" class="bulleted-list"><li style="list-style-type:circle">การฟื้นคืนชีพ</li></ul><ul id="96ed626c-6096-4874-8e3c-ab32007e0bce" class="bulleted-list"><li style="list-style-type:circle">มัมมี่</li></ul><ul id="c608495a-9d8b-4daf-9415-27cf2288a16e" class="bulleted-list"><li style="list-style-type:circle">Pyramid</li></ul><ul id="56c1813d-be1b-4ccb-b00d-8791f09d0c0f" class="bulleted-list"><li style="list-style-type:circle">การแพทย์</li></ul></li></ul><figure id="cafba3c2-930f-48a8-b210-e48db34f1815" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Ehypt.png"><img style="width:768px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Ehypt.png"/></a></figure><ul id="27896648-8050-458d-919d-b370eb82de1f" class="bulleted-list"><li style="list-style-type:disc">อักษรไฮโรกลิฟิก hieroglyphic เป็นอักษรรุ่นแรกที่ประดิษฐขึ้น อายุไล่เลี่ยกับคูนิฟอร์มของสุเมเรียน ใช้ในการแกะสลักเรื่องต่างๆของศาสนาและวิทยาการ โดยแกะสลักลงในหิน ไม้ หรือดินเผา ต่อมาค้นพบกระดาษปาปิรุส จึงได้เขียนลงในกระดาษ</li></ul><ul id="bb4857fe-9e77-4fb7-84db-6d3c6969b7d4" class="bulleted-list"><li style="list-style-type:disc">ต่อมาประดิษฐ์อักษรตัวหวัด ให้เข้าใจง่ายขึ้น เรียกว่า ไฮแรติกHieratic ใช้ค้าขายและใช้ทั่วไป</li></ul><ul id="2485d888-37f3-4439-a475-83bf9908217f" class="bulleted-list"><li style="list-style-type:disc">ต่อมาวิวัฒนาการเป็นอักษรแอลฟาเบต</li></ul><ul id="d632f29b-cb05-46dc-8a79-a220f2ec7a91" class="bulleted-list"><li style="list-style-type:disc">Rosetta Stone อ่านโดย ชอง ฟรังซัว ชองโปลิยอง<ul id="abb68c7c-6cdf-4b37-99ef-f947ec973bba" class="bulleted-list"><li style="list-style-type:circle">มี 3 ภาษาในตัว</li></ul></li></ul><div id="f593f8c3-d323-4961-8e95-c518be28c2b9" class="column-list"><div id="9cb99ffc-0a28-42c1-8eeb-734dbefe9156" style="width:43.75%" class="column"><figure id="f8f58763-1596-4068-83ba-d89051fd6f2a" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/CuX-6FOUAAABti0.png"><img style="width:240px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/CuX-6FOUAAABti0.png"/></a></figure></div><div id="91671925-4d68-4b2c-94ec-ddbf3500145a" style="width:56.25%" class="column"><figure id="d0451289-d1df-4396-9641-1a154d3b1dd5" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/20200704_153335000_ios.png"><img style="width:1461px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/20200704_153335000_ios.png"/></a></figure></div></div><p id="d131a9b2-fbc7-4da6-b9ed-2750a27fefa2" class="">ความเชื่อเรื่องการฟื้นคืนชีพ และบันทึกของผู้ตาย Book of the Dead คู่มือการปฏิบัติหลังจากตายแล้ว ควรปฏิบัติตนอย่างไรก่อนเดินทางไปปรโลก</p><figure id="396c5ead-96b4-450e-9642-d1ae310ba0f2"><a href="https://youtu.be/1yv_MXNYbAo" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Egyptian Book of the Dead: A guidebook for the underworld - Tejal Gala</div><div class="bookmark-description">View full lesson: http://ed.ted.com/lessons/the-egyptian-book-of-the-dead-tejal-galaAncient Egyptians believed that in order to become immortal after death, ...</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/b54c66b0/img/favicon.ico" class="icon bookmark-icon"/>https://youtu.be/1yv_MXNYbAo</div></div><img src="https://i.ytimg.com/vi/1yv_MXNYbAo/hqdefault.jpg" class="bookmark-image"/></a></figure><figure id="1db736a1-0709-4928-a0c4-1ad5dcafb475"><a href="https://youtu.be/9gD0K7oH92U" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">How to make a mummy - Len Bloch</div><div class="bookmark-description">View full lesson: http://ed.ted.com/lessons/how-to-make-a-mummy-len-blochAs anyone who&#x27;s seen a mummy knows, ancient Egyptian priests went to a lot of troubl...</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/b54c66b0/img/favicon.ico" class="icon bookmark-icon"/>https://youtu.be/9gD0K7oH92U</div></div><img src="https://i.ytimg.com/vi/9gD0K7oH92U/hqdefault.jpg" class="bookmark-image"/></a></figure><figure id="780ee39b-3176-4592-a8c8-8b19f037d746" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/mummy-1.png"><img style="width:288px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/mummy-1.png"/></a></figure><hr id="54971482-bacb-41cf-887e-923d21095b23"/><h1 id="63723311-296f-4b7b-b489-469ff08c8847" class="block-color-red_background">อารยธรรมกรีก (Ancient Greek)</h1><figure id="787a5dd7-7da8-475b-9e1b-f962faa8bc8d" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/1077403_orig.png"><img style="width:480px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/1077403_orig.png"/></a><figcaption>Greece เต็มไปด้วยเทือกเขา</figcaption></figure><ul id="39670b86-fab2-49ca-9589-6ea5b3acfa29" class="bulleted-list"><li style="list-style-type:disc">อารยธรรมกรีก เกิดขึ้นในบริเวณตอนใต้คาบสมุทร Balkans และชายฝั่ง Aegean Sea ตั้งอยู่ใกล้เคียงกับ Mediterranean Sea, Ionian Sea, Sea of Crete — ใกล้ ๆ อารยธรรม Mesopotamia &amp; Egypt</li></ul><ul id="dd2f88d4-9149-4123-93a3-68cee2e0428d" class="bulleted-list"><li style="list-style-type:disc">ปัจจัยที่มีอิทธิพลต่อพัฒนาการอารยธรรมกรีก ได้แก่ ภูเขา พื้นดินและทะเล <mark class="highlight-red"><strong>สภาพภูมิประเทศเต็มไปด้วยเนินเขาและภูเขา → ทำให้ติดต่อกันยาก</strong></mark> ส่งผลให้การปกครองเป็นอิสระ เกิดเป็นนครรัฐ</li></ul><ul id="2b6ac808-f4e1-475f-b5ce-2eacbe7c57ea" class="bulleted-list"><li style="list-style-type:disc">สภาพภูมิศาสตร์และพื้นดิน (ไม่อุดมสมบูรณ์) — ไม่สามารถเพราะปลูกได้มาก มีลักษณะเหมือนแหลมยื่นไปในทะเล ทำให้ชาวกรีกค้าขายทางทะเลและเรียนรู้อารยธรรมอื่น ๆ <mark class="highlight-blue"><em>[คล้ายชาว Phoenician]</em></mark></li></ul><h2 id="6ceb5100-69e2-4338-9c73-05d438d196e6" class="">ปัจจัยทางภูมิศาสตร์กับการตั้งถิ่นฐาน</h2><p id="e081f529-532d-4184-9665-f4bafe32c67a" class=""><strong>ดินแดนของชาวกรีกแบ่งได้เป็น 3 ส่วน</strong></p><ol type="1" id="b36ee2c7-3873-434a-8778-7b937e6af7d8" class="numbered-list" start="1"><li>ภาคเหนือ</li></ol><ol type="1" id="13b34818-73fd-45e7-b1f6-878f54e9f5b0" class="numbered-list" start="2"><li>ภาคกลาง</li></ol><ol type="1" id="64a714ea-012e-4a1f-821c-53a4fe15a8ac" class="numbered-list" start="3"><li>ภาคใต้</li></ol><h3 id="ec32812e-bf92-456a-ac9d-30d6557a5165" class="block-color-gray_background">ภาคเหนือ</h3><p id="d8fc1851-c6d8-49f6-8d17-a6c4e89d3f59" class="">ภาคเหนือ ได้แก่ Macedonia<mark class="highlight-gray"> (บ้านเกิดของ Alexander The Great)</mark>, Thessalia, Epirus</p><h3 id="40ffb9c8-06da-41b4-bf6c-b9fcae62937d" class="block-color-gray_background">ภาคกลาง</h3><p id="3e0ebed3-aaef-4aba-a956-3c63ff7576f7" class="">ภาคกลาง ได้แก่ Thebes, Delphi , Thermopylae, Mount Parnassus → เป็นที่สถิตของ Apollo
+— Mount Olympus ที่สิงสถิตของเทพเจ้าทั้งหลาย</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="83238051-53df-43e3-8d61-9c17534434ee"><div style="font-size:1.5em"><span class="icon">⛰️</span></div><div style="width:100%">In Greek mythology <em><strong>Olympus</strong></em> is the home <em><strong>of</strong></em> the Greek gods.</div></figure><p id="2d82a0fe-e30f-4ddb-a53a-60fa1b04d39c" class="">ตรงปลายสุดของด้านตะวันออก คือ แคว้น Attica มีเมืองหลวงคือ<mark class="highlight-red"><strong> Athens (นครรัฐเอเธนส์) </strong></mark>เป็นแหล่งกำเนิดของระบอบประชาธิปไตย</p><h3 id="c708b3e4-90a7-4bce-9ccb-a4c4400ed9c8" class="block-color-gray_background">ภาคใต้</h3><p id="cd2aa640-fa19-4195-ad90-f5345765f051" class="">บริเวณคาบสมุทร Peloponnese อยู่ตอนใต้ของ Gulf of Corinth เป็นที่ตั้งของ Sparta (นครรัฐสปาร์ตา) ที่มีชื่อเสียงด้านการรบ</p><ul id="0f13fb71-f846-429b-a212-ebf11e261655" class="bulleted-list"><li style="list-style-type:disc">ดินแดนกรีซเป็นดินแดนที่มีปัจจัยทางภูมิศาสตร์ที่มีอิทธิพลต่อการตั้งถิ่นฐานและการดำรงชีวิตของประชาชน เนื่องจาก ลักษณะทางภูมิศาสตร์มีอิทธิพลต่อพัฒนาการของอารยธรรมกรีก <strong>มี 3 ประการ คือ ภูเขา พื้นดิน และทะเล</strong></li></ul><h2 id="e6a9ae2e-cb21-43db-ae86-13875e88c6d2" class="">อารยธรรมกรีกสมัยก่อนประวัติศาสตร์</h2><p id="e46638b3-6616-40a5-beee-4590a8c64bf8" class="">3000 - 2000 BC</p><ul id="2df73fb1-3457-4269-b83e-6597ef649ef2" class="bulleted-list"><li style="list-style-type:disc">หลักฐานทางโบราณคดีที่ค้นพบได้ในบริเวณ Crete island<ul id="d5f79a8c-cc4c-4581-a91d-ddf4e1481d26" class="bulleted-list"><li style="list-style-type:circle">ค้นพบ → หลักฐานการตั้งบ้านเรือน, เครื่องมือเครื่องใช้ทำด้วยหิน, เครื่องปั้นดินเผา, รู้จักโลหะทองแดง สำริด เข้าใจว่ารับมาจาก Ancient egypt</li></ul></li></ul><figure id="6b51870a-f9ca-48bb-bd32-9cf881eeee58" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Picture_1.png"><img style="width:288px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Picture_1.png"/></a></figure><ul id="dcde5889-08cb-4ed8-8605-8344e3ea7c65" class="bulleted-list"><li style="list-style-type:disc">ซากเสาเข็มและซากปรักหักพังของเครื่องปั้นดินเผา มีอายุประมาณ 6,000 ปี พบทางตอนเหนือของ Crete island<figure id="9fa0fa93-0cda-40d7-919d-d0c673b3a964" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%201.png"><img style="width:384px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%201.png"/></a></figure></li></ul><h2 id="1949dfeb-fb73-4564-a28d-17a43976122a" class="">อารยธรรมกรีกสมัยประวัติศาสตร์</h2><h3 id="9a2766fe-6d0c-4e1c-abd3-ff1eae0d51a0" class="">Minoan Civilisation (อารยธรรมไมนวน)</h3><p id="00704f76-e91b-4886-88e3-949dcf8ea293" class="">2000 - 1400 BC</p><ul id="150b5ef5-3e6f-4b72-8855-3700bf393ee7" class="bulleted-list"><li style="list-style-type:disc">เป็นอารยธรรมที่เกิดขึ้นบน Crete island โดยมีชาว Crete, Cretan เป็นชนพื้นเมือง เก่งการเดินเรือและค้าขาย</li></ul><ul id="8b04b1a9-866b-467f-bc34-44766a0776dc" class="bulleted-list"><li style="list-style-type:disc">กษัตริย์ที่มีอำนาจมากที่สุด คือ Minos</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a0eb6435-4d85-426d-a812-132758b42ea3"><div style="font-size:1.5em"><span class="icon">🐉</span></div><div style="width:100%">มีตำนานของกษัตริย์ Minos คือ ภรรยาของ Minos (Pasiphaë) ชอบสัตว์ แล้วเกิดลูกด้วย — ไปอ่านต่อได้<p id="772f8acc-2f64-4eb3-82e4-49bbf372cf2c" class=""><mark class="highlight-gray">นาง Pasiphaë กับนางยูโรปา จริง ๆ เป็นเรื่องเดียวกัน แต่เป็นคนละเวอร์ชั่น แกนเรื่องหลัก ๆ เลยคล้ายกันคือพูดถึงหญิงสาวที่กลายเป็นราชินีของเกาะครีต แล้วก็มีวัวด้วย แต่ท้องเรื่องฉบับนาง Pasiphaë โหดกว่ายูโรปาจมเลย คือเจ้คนนี้เป็นราชินีและเมียของ กษัตริย์ไมนอส ตามตำนานคือเทพเจ้าโพไซดอนประทานวัวรูปงามมาตัวหนึ่งให้กับดินแดน ตามหลักแล้วอีตาไมนอสต้องทำการบูชายันต์เพื่อสังเวยวัวคืนกลับไปให้กับโพไซดอน แต่พี่แกดั๊นไม่ยอมคืนกลับเก็บเจ้าวัวที่เทพเจ้าให้ไว้ ผลกรรมเลยเกิด โพไซดอนก็โกรธสิทำไมอมของได้ แต่ความซวยไปตกที่เมีย คือโพไซดอนบอกว่าชอบมากนักใช่มั้ย เลยสาปเมียไมนอสให้ไปหลงรักและได้เสียกับเจ้าวัวนั่นซะเลย (โหดสึส) ในบางเวอร์ชั่นอยากขยี้ลงไปอีกเลยลงรายละเอียดว่ากษัตริย์ไมนอสให้สถาปนิกสร้างวัวเทียมขึ้นมาเพื่อให้นางไปซ่อนในวัวเพื่อจะร่วมรักกับวัวนั้นได้ ผลของคำสาปคือก็ได้อสูรร้ายมิโนทอร์ขึ้นมา และต้องขังไว้ในเขาวงกต</mark></p><figure id="e1f3176b-2b03-4f9b-95aa-265c2d32ad13" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Pasiphae-minotaur.jpg"><img style="width:336px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Pasiphae-minotaur.jpg"/></a></figure><figure id="4c7e7ca4-b992-4aa5-978d-4a8fcde8f19c"><a href="https://www.ancient-origins.net/myths-legends-europe/pasiphae-daughter-sun-wife-king-and-mother-minotaur-0010005" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Pasiphae: Daughter of the Sun, Wife of a King, and Mother of the Minotaur</div><div class="bookmark-description">Pasiphae is a figure from Greek mythology. She is best-known as the wife of Minos, the legendary king of Crete, and the mother of the Minotaur. But Greek mythology has more to say about this interesting figure. Stories show she was a strange and spellbinding character.</div></div><div class="bookmark-href"><img src="https://www.ancient-origins.net/apple-touch-icon-192x192.png" class="icon bookmark-icon"/>https://www.ancient-origins.net/myths-legends-europe/pasiphae-daughter-sun-wife-king-and-mother-minotaur-0010005</div></div><img src="https://www.ancient-origins.net/sites/default/files/field/image/Pasiphae-minotaur.jpg" class="bookmark-image"/></a></figure></div></figure><ul id="19382b6e-22ea-4097-91dd-1809cab615d3" class="bulleted-list"><li style="list-style-type:disc">มีการสร้างพระราชวัง (enormous) คือ พระราชวังนอสซัส (Knossos) วังนี้แสดงความเจริญด้านสถาปัตยกรรม วิศวกรรม มีระบบประปา และระบบชักโครก</li></ul><ul id="1bbb70c6-6e1b-4117-91bf-d73657c3bef6" class="bulleted-list"><li style="list-style-type:disc">เทพที่สำคัญ ได้แก่ เทพมารดา สะท้อนบทบาทสตรีชาว Cretan</li></ul><ul id="29ed1bcf-a5ab-495b-b32e-49b6ed1e6c16" class="bulleted-list"><li style="list-style-type:disc">ประมาณ 1400 BC — Minoan Civilisation สิ้นสุดลง เมื่อถูกรุกรานจากพวก Achaeans หรือ Mycenaean และรับเอาอารยธรรม Minoan ไปใช้ต่อ</li></ul><h3 id="e92e652c-0650-4ef6-a219-cdbf67c7ed67" class="">Mycenaean Civilisation (อารยธรรมไมซีเน)</h3><figure id="b89154ca-fd26-4e5d-87f4-d39ae8e3d98c" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/kindpng_2315247.png"><img style="width:288px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/kindpng_2315247.png"/></a><figcaption>Zeus</figcaption></figure><p id="f8448b65-9f40-4b0e-af00-715838f3718d" class="">1400 - 1100 BC</p><ul id="b8104aec-09dc-453d-9344-14a46bd52d86" class="bulleted-list"><li style="list-style-type:disc">เป็นอารยธรรมของพวก Mycenaean มีศูนย์กลางอยู่ที่เมือง Mycenae บนคาบสมุทร Peloponnese</li></ul><ul id="ec2612a2-0556-4206-a9e0-bca9a5f36018" class="bulleted-list"><li style="list-style-type:disc">บรรพบุรุษของชาว Mycenaean คือ พวก Achaeans มีความสามารถในการรบและการค้า ซึ่งพวกนี้โจมตี Crete island ทำลาย <em>พระราชวัง Knossos</em> และได้สร้างเมือง Mycenae ขึ้น ซึ่งมีป้อมปราการที่แข็งแรง ทำให้พวก Achaeans มีชื่อใหม่ว่า Mycenaean ตามชื่อเมือง</li></ul><ul id="15a8ccdf-6319-4087-ae8b-675c132b978a" class="bulleted-list"><li style="list-style-type:disc">อารยธรรมสำคัญของชาว Mycenaean คือ <strong>ตัวอักษร Mycenaean (Linear A)</strong></li></ul><ul id="32a82888-56b1-4b9d-a26a-f6c8cf8701ff" class="bulleted-list"><li style="list-style-type:disc">1200 BC — Mycenaean ได้เข้ายึด Troy (Ancient city) จนเป็นตำนาน</li></ul><ul id="cf0982f7-afac-4379-b47a-b543669b3fae" class="bulleted-list"><li style="list-style-type:disc">นับถือเทพเจ้าหลายองค์ เช่น Zeus, Hera, Poseidon โดย Zeus เป็นเทพพระเจ้าสูงสุด<ul id="c8a9ae6b-781d-4279-a71f-c7738bd41c7d" class="bulleted-list"><li style="list-style-type:circle">นิสัยใจคอก็เหมือนมนุษย์เลย มีรัก โลภ โกรธ หลง</li></ul></li></ul><ul id="00faead0-c914-4860-878d-651e1cf4a5a0" class="bulleted-list"><li style="list-style-type:disc">ถูกพวก Dorian ซึ่งเป็นกรีกเผ่าหนึ่งรุกราน จนล่มสลาย</li></ul><h3 id="39ad4a1c-ded5-4b69-a6ab-ee92a500da53" class="">Hellenistic Civilisation (อารยธรรมเฮเลน/กรีก)</h3><p id="cb9dd2ef-61f1-4038-831c-c9558d391010" class="">800 BC</p><ul id="b41638b6-60eb-4e55-b3c1-a36e7a1d86fd" class="bulleted-list"><li style="list-style-type:disc">ลักษณะภูมิประเทศของกรีซ ทำให้การตั้งถิ่นฐานบ้านเมืองของชาวกรีก แบ่งออกเป็นนครรัฐ (City – State) ซึ่งชาวกรีกนิยมเรียกว่า Polis</li></ul><ul id="130c2cfb-31de-492e-9336-22be5d1f5f61" class="bulleted-list"><li style="list-style-type:disc">การปกครองของกรีกหลัง <strong>800 BC หรือ ที่เรียกว่า Classical Greece</strong> มีการปกครองในระบอบกษัตริย์และการปกครองใน Oligarchy (ระบอบคณาธิปไตย → ผู้นำหลายคน)</li></ul><ul id="72e8d878-1208-4cd0-a6e8-9657b211a287" class="bulleted-list"><li style="list-style-type:disc">ระบอบการปกครองใน 700 BC ขุนนางมีบทบาทในการปกครองนครรัฐ</li></ul><ul id="360d4443-6f18-4726-93f9-f2d8b1aad66f" class="bulleted-list"><li style="list-style-type:disc">ชาวกรีกเรียกตนเองว่า Hellenes เรียกอารยธรรมของตนว่า Hellenic</li></ul><ul id="f8f95d35-5e61-426d-b286-466efd626f9d" class="bulleted-list"><li style="list-style-type:disc">ประมาณ 500 BC ศูนย์กลางความเจริญของกรีกได้ย้ายมาสู่นคร Athens ในแคว้น Attica<ul id="acdc10ce-bfe2-445b-92a1-fe83198a4b7a" class="bulleted-list"><li style="list-style-type:circle">500 BC เกิดสงครามระหว่าง Persia กับ Greek อยู่ในหนัง 300</li></ul><ul id="8ae1ea12-02eb-477c-b05a-5a1acd5b7b11" class="bulleted-list"><li style="list-style-type:circle">สถาปัตยกรรม วรรณคดี ประวัติศาสตร์ การแพทย์ ปรัชญา มีความเจริญขึ้นอย่างรวดเร็ว เอเธนส์มีความเจริญสูงสุดจนเรียกว่า<mark class="highlight-red"><strong> “ยุคทองแห่ง Athens”</strong></mark></li></ul></li></ul><ul id="dd98cf2d-663a-4edf-8f27-ad9c6edacf1e" class="bulleted-list"><li style="list-style-type:disc">ต่อมานครรัฐต่าง ๆ เริ่มหันมาปกครองด้วย Democracy ซึ่งถือเป็นจุดเริ่มต้นและเป็นมรดกทางอารยธรรมที่สำคัญประการหนึ่งที่ถ่ายทอดให้แก่โลกตะวันตก จนเกิดการพัฒนามาเป็น Democracy form ในที่สุด</li></ul><ul id="bc08473b-c870-4001-a028-35da76385daf" class="bulleted-list"><li style="list-style-type:disc">ความมั่งคั่งของ Athens ทำให้เกิด <strong>Peloponnesian War</strong> ซึ่งเป็นสงครามระหว่าง Athens vs Sparta นำความเสื่อมมาสู่นครรัฐกรีก</li></ul><ul id="56f8268e-4bbe-4576-88d5-212015236e85" class="bulleted-list"><li style="list-style-type:disc">ในสมัย <strong>Alexander the Great</strong> (336 - 323 BC) แห่ง Macedonia ได้รวบรวมนครรัฐกรีก หรือที่เรียกว่า Hellenistic Age<ul id="c10715fb-5e8e-47fa-a3c4-a95a893b3e3d" class="bulleted-list"><li style="list-style-type:circle">กรีกสามารถขยายดินแดนครอบคลุม Egypt, Asia Minor, Persia ไปจนถึง India และ Greek ก็ถูก Roman conquered (ผนวก) เมื่อ 146 BC</li></ul></li></ul><figure id="866de9b6-d9d4-4f86-a814-d18bf6f49dd7" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%202.png"><img style="width:480px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%202.png"/></a><figcaption>การขยายดินแดนของกรีกในสมัย Alexander the Great — ครึ่งโลก</figcaption></figure><h2 id="0736e687-e21b-4001-80b4-4917cf07adaa" class="">มรดกของอารยธรรมกรีก</h2><h3 id="3948cf79-538f-4f73-883c-16a8611e7117" class="block-color-gray_background">Architecture<mark class="highlight-gray"> (สถาปัตยกรรม)</mark></h3><figure id="83b98eb4-408a-42ec-a402-888c12275c74" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Parthenon_rt_top8lj_copy.png"><img style="width:384px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Parthenon_rt_top8lj_copy.png"/></a><figcaption>The Parthenon ใช้แบบ Doric Order</figcaption></figure><ul id="5e6cf62a-2fce-40cf-8b3e-95627fb124ab" class="bulleted-list"><li style="list-style-type:disc">งานก่อสร้างของกรีกไม่ใช่พระราชวังหรูหราเหมือนในสมัย Minoan แต่จะเป็นวิหารสำหรับเทพเจ้า</li></ul><ul id="fd539348-a3e3-49a0-91ef-c6008df0d5a3" class="bulleted-list"><li style="list-style-type:disc">วิหารที่กรีกสร้างไว้บูชาเทพเจ้าต่าง ๆ นั้น นิยมสร้างบนเนินดินหรือภูเขาเล็ก ๆ ซึ่งมีชื่อเรียกว่า Acropolis</li></ul><ul id="642dfa3f-a850-408e-9337-9e24050d303d" class="bulleted-list"><li style="list-style-type:disc">มีวิหารที่สำคัญ ได้แก่ Parthenon อยู่ที่ Athens</li></ul><hr id="1d8b17a2-c76c-4b2a-b64f-abeed9eee1f9"/><p id="a1ced7b0-74d1-404a-9bd9-5bd0f8b02b83" class=""><strong>ลักษณะของเสากรีก (Types of Classical Order) —</strong><mark class="highlight-teal"><strong> มี 3 แบบ</strong></mark></p><figure id="c537145c-33dc-4b44-942a-15b6d3c52e96" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/classicalorder.jpg"><img style="width:528px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/classicalorder.jpg"/></a></figure><ol type="1" id="ae9f9cf8-d49a-4c9b-a4c7-350200a82e04" class="numbered-list" start="1"><li><strong>แบบดอริก (Doric Order)</strong><p id="be9f086c-0640-4484-abd3-5a71a161d32b" class="">เน้นความแข็งแรง เสาส่วนล่างใหญ่และเรียวขึ้นเล็กน้อย ตามลำเสาแกะเป็นทางยาวตามแนวตั้ง หัวเสาเป็นแผ่นเรียบ</p></li></ol><ol type="1" id="86f9a173-f60f-4bd6-b43b-224599bf1762" class="numbered-list" start="2"><li><strong>แบบไอออนิก (Ionic Order)</strong><p id="89642271-b5d0-421e-93a1-cc22eb4e599f" class="">หัวเสาทำเป็นลวดลายโค้งม้วนย้อยลงมาทั้งสองข้าง ทำให้เสาดูสูงเพรียว</p></li></ol><ol type="1" id="44f1c1de-2cc1-48b8-9550-d4ac51c6edec" class="numbered-list" start="3"><li><strong>แบบคอรินเธียน (Corinthian Order)</strong><p id="cc550cf1-c301-4db9-9aa2-8655a0b466d8" class="">เน้นความหรูหรา ประดับยอดเสาด้วยลายใบไม้ เสาแบบนี้ปรากฏมากใน Hellenistic period</p></li></ol><h3 id="d980904c-4a6f-4474-a5ea-d09939b47c87" class="block-color-gray_background">Sculpture<mark class="highlight-gray"> (ประติมากรรม)</mark></h3><div id="f164145a-133a-4fa0-9bbc-2c4d0c705260" class="column-list"><div id="78df5bcb-8a4c-499d-a31e-f6018965cf98" style="width:50%" class="column"><figure id="420813b9-5666-4c94-ab3d-f23dbc44929e" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/photo-1603896959089-342be42f8962.jpeg"><img style="width:480px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/photo-1603896959089-342be42f8962.jpeg"/></a></figure></div><div id="0a6546d2-f7ef-405f-a348-dabb99cfed22" style="width:50%" class="column"><figure id="5858e84f-da2e-49c7-81cc-c7f2b54acae9" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Hermes-and-the-Infant-Dionysus-Hermes-of-Praxiteles-min.jpg"><img style="width:683px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Hermes-and-the-Infant-Dionysus-Hermes-of-Praxiteles-min.jpg"/></a></figure></div></div><ul id="108a9c61-1d7d-4af1-ad6c-f7420acd2d14" class="bulleted-list"><li style="list-style-type:disc">ชาวกรีกเก่งด้านนี้ เหมือนจริงมาก ๆ</li></ul><ul id="6a634f64-b72d-4f61-9a43-c8c7bc0c87cc" class="bulleted-list"><li style="list-style-type:disc">งานประติมากรรมของกรีก มีความโดดเด่นมาก กรีกเป็นชาติแรกที่แกะสลักรูปมนุษย์ได้สัดส่วน สวยงาม</li></ul><ul id="c8785799-c3f1-4e03-9f25-456623ad1ba9" class="bulleted-list"><li style="list-style-type:disc">งานประติมากรรมของกรีกในระยะแรกได้รับอิทธิพลจาก Egypt ซึ่งมีลักษณะหน้าตรง แข็งทื่อ</li></ul><ul id="f4c25b6d-3518-458e-857d-b64531eb39c1" class="bulleted-list"><li style="list-style-type:disc">ใน Classical Greece (800 BC) — สร้างงานประติมากรรมภาพเปลือยที่แสดงกล้ามเนื้อให้มีความถูกต้องตามหลัก Anatomy</li></ul><h3 id="9645f4dd-5e91-491d-b161-5baa437e3a3b" class="block-color-gray_background">Painting <mark class="highlight-gray">(จิตรกรรม)</mark></h3><div id="ed985fb9-3fc7-42f9-b703-bee340eee6b6" class="column-list"><div id="57e8e245-2938-448d-af4e-b59ca4fa80a7" style="width:37.5%" class="column"><figure id="9693bc41-4dab-48f6-a3f7-b4901ac7a1f0" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/pngwing.com-4.png"><img style="width:192px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/pngwing.com-4.png"/></a><figcaption>Pottery of ancient Greece</figcaption></figure></div><div id="dfdfd5c7-4963-48ea-9442-ed92cfa2483e" style="width:62.5%" class="column"><figure id="51ea06fe-7b3a-446e-b319-03bd5366a86a" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/944dafb127370bc558db7abece69a5c6.jpg"><img style="width:432px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/944dafb127370bc558db7abece69a5c6.jpg"/></a><figcaption>Ancient Greek Mosaics</figcaption></figure></div></div><ul id="b57462e4-5a59-4d03-9dd2-73d38a665bb0" class="bulleted-list"><li style="list-style-type:disc">ส่วนใหญ่จะเป็นงานจิตรกรรมบนภาชนะของใช้ต่าง ๆ ที่ทำจากเครื่องปั้นดินเผา</li></ul><ul id="25358305-06a3-48c2-8342-eed11be32a77" class="bulleted-list"><li style="list-style-type:disc">เมื่อ Hellenistic period กรีกได้ค้นพบเทคนิคใหม่ในการวาดภาพประดับฝาผนังขนาดใหญ่โดยใช้หินหรือกระเบื้องสีมาประดับ เรียกว่า Mosaic</li></ul><h3 id="078e1f6b-308e-49de-af9a-6153a706598f" class="block-color-gray_background">Drama <mark class="highlight-gray">(นาฏกรรม)</mark></h3><figure id="2c607aad-e7b4-4551-b5a5-d94f3aa94803" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/new-comedy.jpg"><img style="width:288px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/new-comedy.jpg"/></a></figure><ul id="f5ee160f-30e2-4ab9-b4dc-fec981c64d04" class="bulleted-list"><li style="list-style-type:disc">ความเชื่อและศรัทธาในเทพเจ้า Dionysus ของชาวกรีกมีผลต่องานสร้างสรรค์ศิลปะแขนงนาฎกรรมหรือการละคร</li></ul><ul id="25203c40-80a7-46d1-b134-ba408fe5b218" class="bulleted-list"><li style="list-style-type:disc">การแสดงละครนี้จะแพร่หลายมากใน ยุค Classic จนในที่สุดพัฒนามาเป็นละครโศกนาฎกรรม (Tragedy) และ ละครสุขนาฎกรรม (Comedy) ใช้นักแสดงชายล้วน ทุกคนสวมหน้ากาก มีผู้พากย์และมี Chorus ส่งเสียงประกอบ</li></ul><h3 id="378dd201-acf9-4773-8d34-85982157bce1" class="block-color-gray_background">Literature <mark class="highlight-gray">(วรรณกรรม)</mark></h3><div id="308c3dd6-6160-49ec-9498-d2830044ff29" class="column-list"><div id="23601e0a-a247-4a11-814e-4b44aa5f69fa" style="width:18.75%" class="column"><figure id="87b38421-4cc9-4106-b210-a52f1740c6e9" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Cropped-removebg-herodotus-historian.png"><img style="width:240px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Cropped-removebg-herodotus-historian.png"/></a><figcaption>Herodotus</figcaption></figure><figure id="c2fb2e48-8279-457f-ab43-f9c893780a23" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Aristotle_transparent.png"><img style="width:240px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Aristotle_transparent.png"/></a><figcaption>Aristotle</figcaption></figure></div><div id="a86c6fc4-a5c5-4f37-9b24-3e1c77803d6d" style="width:81.25%" class="column"><ul id="ac860cb9-98d0-4524-a9c3-49f26fcc57e7" class="bulleted-list"><li style="list-style-type:disc">กรีกมีงานประพันธ์ที่ถือเป็นมรดกทางวัฒนธรรมที่สำคัญ เช่น<ul id="ecf1c623-d375-4735-b8ff-46d7548f4d7c" class="bulleted-list"><li style="list-style-type:circle">มหากาพย์ Iliad &amp; Odyssey ของ Homer เป็นแม่แบบของวรรณกรรม</li></ul><ul id="7e6e9104-89a0-44bf-8524-c311382c39c2" class="bulleted-list"><li style="list-style-type:circle">รัฐศาสตร์ (The Politics) ของ <strong>Socrates</strong></li></ul><ul id="84258266-9b72-4ce4-a5ef-1bb28d9af4c0" class="bulleted-list"><li style="list-style-type:circle">อุดมรัฐ/สาธารณรัฐ (The Republic) ของ <strong>Plato</strong></li></ul><ul id="84f31ca2-12e3-4984-916a-46a2e7277817" class="bulleted-list"><li style="list-style-type:circle">จริยศาสตร์ (Ethics) รัฐศาสตร์ (The Politics) และของ <strong>Aristotle</strong></li></ul><ul id="a60a78bb-586a-4507-8f16-0e9238c1e7d9" class="bulleted-list"><li style="list-style-type:circle">ประวัติศาสตร์ (History) ของ Herodotus ได้รับการยกย่องเป็นบิดาแห่งการเขียนประวัติศาสตร์</li></ul><ul id="bc5ef8a2-cf83-4dce-ba2b-6c55078cd361" class="bulleted-list"><li style="list-style-type:circle">History of Peloponnesian War ของ Thucydides<p id="6cab8026-cc76-4925-b543-86b3671a8b51" class="block-color-gray"><em>Athens vs Sparta</em></p></li></ul></li></ul></div></div><h3 id="be519fc5-34da-4134-b665-fd8f991ca0b9" class="block-color-gray_background">Mathematics <mark class="highlight-gray">(คณิตศาสตร์)</mark></h3><ul id="16b05f29-77c0-4acb-8c8a-b58697b341af" class="bulleted-list"><li style="list-style-type:disc">นักคณิตศาสตร์เด่นของกรีก ได้แก่<ul id="3ad01adf-54a2-48fa-9055-4e9fbcbf7454" class="bulleted-list"><li style="list-style-type:circle">Pythagoras แห่ง Samos → คิดค้น Pythagorean theorem</li></ul><ul id="d2a1c586-2615-4f04-8006-2b665eab39ff" class="bulleted-list"><li style="list-style-type:circle">Euclid แห่ง Alexandria → ผู้คิด Euclidean geometry</li></ul></li></ul><h3 id="fa650226-4f96-4354-859d-805c729a0842" class="block-color-gray_background">Physics <mark class="highlight-gray">(ฟิสิกส์)</mark></h3><ul id="28ae9ec6-906d-41a1-a530-a432a1aa1e19" class="bulleted-list"><li style="list-style-type:disc"><strong>Archimedes </strong>แห่ง Syracuse → ผู้คิดค้นระหัดวิดน้ำแบบเกลียวลูกรอกชุด ตั้งกฏของคานดีดคานงัดและพบวิธีหาปริมาตรของวัตถุโดยการแทนที่น้ำ<p id="4d5b7e3e-c7ff-452b-8cb6-770abdecdfc8" class=""><a href="https://www.notion.so/Elasticity-and-Fluid-bad3125c077d47e093c262a0517866e6"><img class="icon" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/box.png"/>Elasticity and Fluid</a> (แรงลอยตัว <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">F</mi><msub><mpadded width="0px"><mphantom><mi>X</mi></mphantom></mpadded><mpadded height="0px"><mi mathvariant="normal">B</mi></mpadded></msub></mrow><annotation encoding="application/x-tex">\ce{F_B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathrm">F</span><span class="mord"><span class="mord"><span class="mord rlap"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord mathnormal" style="margin-right:0.07847em;color:transparent;">X</span></span></span><span class="fix"></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.15em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span><span class="mord mtight"><span class="mord mathrm mtight">B</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>; Buoyant force)</p></li></ul><h3 id="7330d2dc-a059-4181-b85b-e889a90cbd3a" class="block-color-gray_background">Medicine <mark class="highlight-gray">(การแพทย์)</mark></h3><ul id="44bd5a57-775b-492b-a84b-bd3b734f1467" class="bulleted-list"><li style="list-style-type:disc">Hippocrates ได้รับการยกย่องเป็น <mark class="highlight-red"><strong>“บิดาแห่งการแพทย์ (Father of Medicine)”</strong></mark> เป็นคนแรกที่ตัดชิ้นส่วนของมนุษย์เพื่อศึกษา พบว่าสมองเป็นศูนย์กลางของระบบประสาท (<a href="https://www.notion.so/Nervous-System-4c1fe410ad2d45d89431baa5f9908aaf"><img class="icon" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/neuron.png"/>Nervous System</a>) และได้รับการยกย่องเป็น <mark class="highlight-red"><strong>“บิดาแห่งกายวิภาคศาสตร์ (Father of Anatomy)”</strong></mark></li></ul><h3 id="e4874b46-c0f6-4118-86b9-d55b47ff438d" class="block-color-gray_background">Geography <mark class="highlight-gray">(ภูมิศาสตร์)</mark></h3><ul id="04d31079-f56a-4a7b-8789-7bbbf1f20893" class="bulleted-list"><li style="list-style-type:disc">Eratosthenes เป็นนักดาราศาสตร์และนักภูมิศาสตร์ สามารถคำนวณเส้นรอบโลกได้</li></ul><h3 id="b5e64c54-2737-490c-bccb-eec14c283f7e" class="block-color-gray_background">History <mark class="highlight-gray">(ประวัติศาสตร์)</mark></h3><ul id="bf5b1c95-d5f9-4652-abaa-23a2b4839700" class="bulleted-list"><li style="list-style-type:disc">Herodotus ได้เดินทางไปยังดินแดนต่าง ๆ และเขียนหนังสือชื่อว่า ประวัติศาสตร์ (History) กล่าวถึงขนบธรรมเนียมประเพณี ตำนาน และประวัติศาสตร์ของโลกสมัยโบราณ</li></ul><h3 id="5d96d297-e409-41ef-9af1-74f7a4ec0d96" class="block-color-gray_background">Olympic Games <mark class="highlight-gray">(การแข่งขันกีฬาโอลิมปิก)</mark></h3><ul id="c8810144-df5c-4132-bb20-a8694c97f687" class="bulleted-list"><li style="list-style-type:disc">จัดขึ้นที่เมือง Olympia ในนคร <strong>Elis</strong> คาบสมุทร Peloponnese กีฬานี้ชาวกรีกถือว่าเป็นส่วนหนึ่งของศาสนา มีสนามขนาดใหญ่ มีวิหารบูชา Zeus บน Mount Olympus จัดทุก ๆ 4 ปี ผู้ชนะจะได้ช่อมะกอกป่าขดเป็นพวง สวมหัว<ul id="13948783-c577-45ef-b0d9-78256aacb838" class="bulleted-list"><li style="list-style-type:circle">ตอน 2004 — Greek จัด ก็ต้องยิ่งใหญ่ ไปกู้ต่างประเทศมา <strong>ไทย = วิกฤตต้มยำกุ้ง</strong></li></ul></li></ul><h2 id="c87f2ff5-0c81-4b89-b403-e6c1ba01ce7a" class="">แนวคิดประชาธิปไตยทางตรง</h2><ul id="99e1f964-f330-4c87-9d39-dd59a6170ddb" class="bulleted-list"><li style="list-style-type:disc">เกิดขึ้นที่ Athens (700 BC) กษัตริย์สูญเสียอำนาจแก่ขุนนาง ประชากรที่เป็นชายที่บรรลุนิติภาวะ เป็นพลเมืองของรัฐ มีสิทธิหน้าที่มีส่วนร่วมในการปกครอง</li></ul><ul id="35198176-be70-4d5e-8af2-1b46256cc2aa" class="bulleted-list"><li style="list-style-type:disc">500 BC ประชากรที่เป็นชายที่บรรลุนิติภาวะ มีสิทธิในการเลือกตั้งและดำรงตำแหน่งผู้ปกครอง ต่อมาได้พัฒนาเป็นประชาธิปไตยในปัจจุบัน<mark class="highlight-brown"><em><strong> (แต่เด็ก คนต่างด้าว ผู้หญิง ไม่มีสิทธิในการเลือกตั้ง)</strong></em></mark></li></ul><ul id="8d46e6f2-f06c-4dfd-b306-e17e4d9f1612" class="bulleted-list"><li style="list-style-type:disc">กรีกได้รับการยกย่องว่างเป็นผู้นำในการวางรากฐานการปกครองระบอบประชาธิปไตย ศิลปวัฒนธรรมกรีกได้กลายเป็นมรดกที่สำคัญที่ชาวกรีกมอบให้แก่โลกตะวันตกโดยมีชาวโรมันเป็นสื่อกลางในการถ่ายทอด</li></ul><ul id="0ffd60dd-42b2-4f7b-aaf0-488ce1c7eff0" class="bulleted-list"><li style="list-style-type:disc">กรีกถือเป็นแม่แบบของความเจริญและอารยธรรมตะวันตกอย่างแท้จริง</li></ul><hr id="23cb0cb1-d512-4144-a902-78b190ecccea"/><h1 id="42cde765-2856-47c2-8298-74cbcddf14a1" class="block-color-red_background"><strong>อารยธรรมโรมัน (Ancient Rome)</strong></h1><p id="05419239-36a2-4d77-8606-2533534723b4" class="">753 BC - 476 AD</p><ul id="1b6ecda0-71e6-43de-8f99-ddab24379d08" class="bulleted-list"><li style="list-style-type:disc">รับอริยธรรมมาจากชาว Greek</li></ul><h2 id="14e900a4-76aa-4887-aa34-c34ee48a3cbe" class="">ปัจจัยทางภูมิศาสตร์กับการตั้งถิ่นฐาน</h2><figure id="a1eb84ee-5888-4030-b696-4219d93fac8b" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Map_Roman_empire.jpg"><img style="width:528px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Map_Roman_empire.jpg"/></a><figcaption>คาบสมุทร Italy</figcaption></figure><p id="7d1b159b-3668-41f3-89ac-7e34bbeda3aa" class=""><span style="border-bottom:0.05em solid"><strong>แบ่งการปกครองออกเป็น 2 ฝั่ง</strong></span></p><ol type="1" id="6163891e-8731-40b0-9f43-f44eb3d4a4c5" class="numbered-list" start="1"><li>โรมันตะวันออก (Byzantine) — ตอนยุคกลางมันล่มสลาย (476 AD)</li></ol><ol type="1" id="17eb604c-c497-4219-b8e6-b47449c1b1dd" class="numbered-list" start="2"><li>โรมันตะวันตก (Roman)</li></ol><ul id="322d9769-493a-4ea9-b84d-3fc821bac87e" class="bulleted-list"><li style="list-style-type:disc">อารยธรรมโรมันกำเนิดในบริเวณคาบสมุทร Italy ลักษณะภูมิประเทศส่วนใหญ่เป็นภูเขาและเนินเขา ได้แก่ Northern Alps Mountain, Apennine Mountain</li></ul><ul id="5cdd84a8-4368-45b0-a8ef-09bb9727cf6c" class="bulleted-list"><li style="list-style-type:disc">ส่วนบริเวณที่ราบที่สำคัญ เช่น ที่ราบลุ่มน้ำ Tiber ซึ่งเป็นที่ตั้งของ Rome ในปัจจุบัน และที่ราบลุ่มแม่น้ำ Po ซึ่งอยู่ทางเหนือ</li></ul><ul id="4a2b99c3-7503-48c2-b000-ca5a0af009da" class="bulleted-list"><li style="list-style-type:disc">พื้นที่เกษตรมีน้อย เมื่อประชากรเพิ่มขึ้นจึงเป็นสาเหตุให้ชาวโรมันขยายดินแดน</li></ul><p id="10ea5a43-2645-46c1-b4ec-c2398fae337d" class=""><mark class="highlight-red"><strong>สรุปก็คือ ที่ตั้งถิ่นฐานมีความอุดมสมบูรณ์มากกว่า Greek มีทั้งเทือกเขา, ที่ราบลุ่มแม่น้ำ</strong></mark></p><ul id="e7e2727f-fd1a-472a-8aea-da503cfa1746" class="bulleted-list"><li style="list-style-type:disc">ดินแดนในคาบสมุทร Italy มีทรัพยากรแร่ที่อุดมสมบูรณ์ แต่ทรัพยากรดิน<span style="border-bottom:0.05em solid">มีจำนวนจำกัด</span> เนื่องจากลักษณะภูมิประเทศที่ไม่มีพื้นที่เพียงพอต่อการตั้งถิ่นฐาน และต้องแย่งชิงกับชนกลุ่มอื่น ๆ</li></ul><ul id="6f574a3b-34cf-46cf-909c-d05cb7fc0323" class="bulleted-list"><li style="list-style-type:disc">ปัจจัยทางภูมิศาสตร์ส่งผลให้ชาวโรมันเป็นคนที่ขยัน อดทน มีระเบียบวินัย ปฏิบัติตามกฎระเบียบอย่างเคร่งครัด สามารถขยายอาณาเขตยึดครองดินแดนของชนเผ่าอื่น ๆ<p id="b7df9a56-11f6-4bad-8d12-11a200078315" class=""><mark class="highlight-gray">เช่น ดินแดนของพวก </mark><mark class="highlight-gray">Etruscan</mark><mark class="highlight-gray">, ดินแดนรอบ Mediterranean Sea</mark></p></li></ul><h2 id="ad39b9d3-2d7b-4be1-812a-a7e76e818125" class="">การขยายอำนาจของโรมัน (ประวัติความเป็นมา)</h2><ul id="bc74e777-a8e4-46c5-b2e0-9ce987868802" class="bulleted-list"><li style="list-style-type:disc">ชาวโรมันมีความเชื่อตามตำนานว่า Rome สถาปนาขึ้นบนเนินเขา 7 ลูก เมื่อ 753 BC โดยพี่น้องฝาแฝด ชื่อ Romulus &amp; Remus เป็นลูกของเทพ ซึ่งเติบโตมาจากการเลี้ยงดูของสุนัขป่า เป็นพวก Latin <em>(คืออย่างเดียวกัน Roman)</em></li></ul><figure id="04bbaa68-4e02-4bdb-a6a3-1f8cc6af92d5" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_1414330961.png"><img style="width:288px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_1414330961.png"/></a><figcaption>Romulus and Remus</figcaption></figure><ul id="77c159a4-8fd4-4d8c-b0df-289bb1186713" class="bulleted-list"><li style="list-style-type:disc">ต่อมา <mark class="highlight-orange"><strong>600 BC</strong></mark> — พวก Etruscan ซึ่งเป็น Greek เผ่าหนึ่ง ได้ Invade จนได้กรุงโรม เมื่อ Etruscan อพยพเข้ามาในแหลม Italy ได้นำเอาความเชื่อของศาสนากรีก ศิลปะการแกะสลัก การทำเครื่องปั้นดินเผา อักษรกรีก การหล่อ Copper และ Bronze การปกครองแบบนครรัฐ การวางผังเมือง การสร้างอาวุธ เข้ามาเผยแพร่ในคาบสมุทร Italy<p id="2c976764-5fc1-45f8-83d0-756e414a78f4" class="">พวก Etruscan ชนพื้นเมืองทางภาคเหนือได้พิชิต Rome ปกครองได้ 100 ปี ก็สูญเสียอำนาจให้แก่พวก Latin</p></li></ul><figure id="43ac6241-9f3d-47c7-a91b-c072cb1082bd" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Greek-Alphabet.png"><img style="width:336px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Greek-Alphabet.png"/></a><figcaption>ได้รับอารยธรรมกรีกไป เช่นตัวอักษรไรงี้</figcaption></figure><ul id="60e6f6b7-67c4-4069-8327-f1393dd75fb4" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong>500 BC</strong></mark> — ชาว Roman โค่นล้มกษัตริย์ของ Etruscan ปกครองแบบ Republic</li></ul><p id="19334f9c-8a52-4c92-937b-279f8b351bac" class="">เหตุการณ์สำคัญเกิดในปีต่าง ๆ ดังนี้ — 753 BC → 600 BC → 500 BC → 27 BC</p><h2 id="1feb7bb9-3175-4d0e-94a1-76964cd4acf6" class="">ปัจจัยที่ส่งเสริมการขยายอำนาจของจักรวรรดิโรมัน</h2><ul id="61428179-f48b-4ad7-8ef2-113775cb8409" class="bulleted-list"><li style="list-style-type:disc">สภาพภูมิของแหลมอิตาลี</li></ul><ul id="7bbfa5ee-c9bc-44a8-8cbb-542f812fca6c" class="bulleted-list"><li style="list-style-type:disc">ระบบการปกครองแบบสาธารณรัฐ</li></ul><ul id="c6b28436-9b4e-4f45-bb22-d9d675906da1" class="bulleted-list"><li style="list-style-type:disc">กองทัพโรมัน</li></ul><p id="368b930f-2829-4c16-91cf-f4e9846351fa" class=""><mark class="highlight-red"><strong>เดี๋ยวค่อยกลับมา</strong></mark></p><h2 id="53d823e3-5cb4-43ad-8af8-a5a79f5086a1" class="">สมัยสาธารณรัฐ</h2><p id="01c0fcb2-dd24-4360-843d-90688ec452f6" class=""><span style="border-bottom:0.05em solid"><strong>แบ่งคนออกเป็น 3 กลุ่ม</strong></span></p><ol type="1" id="d54c740d-d46f-4ea1-a6b1-b25a58856cd1" class="numbered-list" start="1"><li><mark class="highlight-teal">Patrician (ชนชั้นสูง) — อำนาจอยู่ที่นี่เป็นหลัก</mark></li></ol><ol type="1" id="75c9d4b8-6bc9-4974-a845-96b417b1a9ec" class="numbered-list" start="2"><li><mark class="highlight-yellow">Plebeian (ชาวบ้าน) — ก็มีผู้นำอยู่เหมือนกัน เรียกว่า “คณะ Tribunes”</mark></li></ol><ol type="1" id="2f90fbb4-ecb7-4cbb-8717-86562c8d0ab7" class="numbered-list" start="3"><li><mark class="highlight-gray">Slaves (ทหาร)</mark></li></ol><ul id="3eadac7c-8187-43d8-a5f4-818e3cac2a66" class="bulleted-list"><li style="list-style-type:disc">การจัดตั้งสาธารณรัฐ อำนาจการปกครองเป็นของชนชั้นสูง หรือ Patrician เท่านั้น ส่วนสามัญชนหรือ Plebieian ไม่มีสิทธิใด ๆ ต่อมาพวกเพลเบียนได้เรียกร้องสิทธิจนได้สิทธิเข้ามามีส่วนร่วมในการปกครอง</li></ul><ul id="8c7065d4-2648-4aff-b079-0d50669274e0" class="bulleted-list"><li style="list-style-type:disc">พวก Plebieian มีสิทธิเลือกผู้นำของตน เรียกว่า คณะ Tribunes ในที่สุดคณะทรีบูนได้สิทธิทางการเมืองในการหยุดการกระทำที่อยุติธรรมจากพวกพาทริเชียน โดยการเปล่งวาจา Veto แปลว่า ยับยั้ง</li></ul><ul id="28ee62d6-112a-4621-a016-7da3ab3e593f" class="bulleted-list"><li style="list-style-type:disc">การปกครองส่วนกลาง พลเมืองโรมันแต่ละกลุ่มจะมีโอกาสเลือกผู้แทนของตนรวม 3 สภา ได้แก่<ul id="c55fda4d-67a5-4fd6-ac89-b1a1676fadd4" class="bulleted-list"><li style="list-style-type:circle"><strong>สภาซีเนต (Senate)</strong> ซึ่งเป็นตัวแทนกลุ่ม Patrician/สภาสูง มี 300คน</li></ul><ul id="c9bead51-7850-44e8-a06a-0e41469a8c8d" class="bulleted-list"><li style="list-style-type:circle"><strong>สภากองร้อย (Assembly of Centuries)</strong> เป็นตัวแทนกลุ่มทหาร</li></ul><ul id="318e39b8-e4cf-4124-942b-c34d3f7d4ba8" class="bulleted-list"><li style="list-style-type:circle"><strong>สภาราษฎร (Assembly of Tribes)</strong> เป็นตัวแทนพวกเพลเบียน มี 35 เผ่า</li></ul><ul id="6436dd00-6492-48ab-b626-83c1f6645ae2" class="bulleted-list"><li style="list-style-type:circle"><strong>กงสุล (ประธานสภา)</strong> เป็นประมุขในการบริหาร มีจำนวน 2 คน เลือกจาก Patrician มีวาระ 1 ปี</li></ul></li></ul><ul id="81cedaed-ca35-472b-a9ff-e88e54e66505" class="bulleted-list"><li style="list-style-type:disc">ใน 494 BC พวก Plebeian ได้ออกกฎหมายร่วมกับ Patrician ออกประมวลกฎหมายเป็นลายลักษณ์อักษรฉบับแรกของโรมัน เรียกว่า <mark class="highlight-red"><strong>“กฎหมายสิบสองโต๊ะ” (Law of the Twelve Tables)</strong></mark><mark class="highlight-gray"> → มีความคล้ายคลึงกับกฎหมายในปัจจุบัน</mark><p id="c1d0ec28-e61a-48f2-b2a9-e3ffc41a0a24" class="block-color-gray_background"><span style="border-bottom:0.05em solid"><strong>ในสมัยพระเจ้า Justinian (ค.ศ. 527 - 565)</strong></span><div class="indented"><p id="e60bb320-c08e-4430-a1d4-c74b77531f08" class="block-color-gray_background">สมัยพระเจ้า Justinian แห่งโรมันตะวันออก หรือไบแซนไทน์ ได้<span style="border-bottom:0.05em solid"><strong>รวบรวมและจัดประมวลกฎหมาย</strong></span>เป็นหมวดหมู่ เรียกว่า Justinian Code <mark class="highlight-gray">(ประมวลกฎหมายพระเจ้าจัสติเนียน) </mark>ซึ่งกลายเป็นมรดกสำคัญของโลกตะวันตก <mark class="highlight-red"><strong>(คือต่อยอดมาทีหลัง ซึ่งพัฒนามาจาก Twelve Tables อยู่ในยุคกลางแล้ว 527-565 AD)</strong></mark></p></div></p></li></ul><ul id="08e234ea-d0d3-4148-938f-8597386b8a43" class="bulleted-list"><li style="list-style-type:disc">ระหว่าง 264-146 BC โรมันทำสงครามกับพวก Carthage (The Phoenician) ที่ตั้งบริเวณภาคเหนือของทวีป Africa โดย Roman ต้องการแย่งผลประโยชน์ใน Sicily Island เรียกว่า Punic War<p id="06c18994-5621-40dd-b44f-1d435382e8e6" class="">พวก Carthage พ่ายแพ้ — Roman จึงมีอำนาจเหนือดินแดนรอบ Mediterranean Sea ทาง Western</p><p id="425849eb-2d05-4038-8224-f978f1ba2635" class="">146 BC — Roman เอาชนะ Macedonia ซึ่งเป็น Ally กับ Carthage (The Phoenician) ดังนั้นนครรัฐกรีกทั้งหมดและ Asia Minor ที่อยู่ในอาณานิคมของ Macedonia <strong>ก็ตกอยู่ในอำนาจ Roman ด้วย</strong></p></li></ul><h2 id="e0b7e5bc-259e-4295-8cd8-dbc0e28cf46d" class="">สมัยจักรวรรดิ</h2><ul id="3d2b42cb-c673-407e-944a-08d0e630d8f0" class="bulleted-list"><li style="list-style-type:disc">การทำสงครามของโรมัน ทำให้ผู้นำทางทหารขึ้นมามีบทบาทสำคัญ และเกิดการแก่งแย่งอำนาจ ระหว่างกลุ่มทหารและสภา Senate</li></ul><ul id="810a02b3-2260-43b3-bf16-e19be0641cfa" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>46 BC</strong></mark> — แม่ทัพ Roman นามว่า “Julius Caesar” ได้เข้าควบคุมกรุง Romane และสถาปนาตนเอง เป็น <strong>Dictator (ผู้เผด็จการ)</strong> มีอำนาจเทียบเท่ากษัตริย์แม้ในขณะนั้น Roman ยังปกครองแบบ Republic (สาธารณรัฐ) สุดท้าย Julius Caesar ถูกลอบสังหาร</li></ul><ul id="23694160-06da-4a48-ab57-f7a0a7ecae3c" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-red">27 BC</mark></strong> — Roman ยุติการปกครองแบบ Republic และเปลี่ยนเป็น ระบอบจักรวรรดิ (รวมศูนย์อำนาจ) อย่างเป็นทางการ จักรพรรดิหรือซีซาร์องค์แรก คือ Octavian ต่อมา เปลี่ยนชื่อเป็น Augustus<ul id="93b6b5ba-bd8c-4029-a675-d0d14daad7f7" class="bulleted-list"><li style="list-style-type:circle">ชาวโรมันได้ยุติการปกครองในระบอบสาธารณรัฐและหันมาใช้การปกครองแบบจักรวรรดิ</li></ul></li></ul><ul id="919c6342-727d-4812-abad-e38fd31337d7" class="bulleted-list"><li style="list-style-type:disc">Octavian ได้รับสมญานามว่า Augustus และสภาโรมันยกย่องให้เป็นจักรพรรดิพระองค์แรกของจักรวรรดิโรมัน</li></ul><figure id="7b711126-c602-4b3f-ac90-125f2bdb87ce" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Statue-Augustus.jpg"><img style="width:240px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Statue-Augustus.jpg"/></a></figure><figure id="b35aa47e-6811-4a4c-bb44-59a7f13eae2e" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled-4.png"><img style="width:120px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled-4.png"/></a></figure><ul id="b9167d6e-d924-4276-9505-1b341caf2c62" class="bulleted-list"><li style="list-style-type:disc">โรมันเจริญรุ่งเรืองมาก ภายหลังจากเปลี่ยนเป็นระบอบจักรวรรดิ ทำให้อารยธรรมโรมัน ที่สืบทอดจากกรีก แพร่หลายไปทั่วทั้ง 3 ทวีป ได้แก่ Europe, Africa, Asia โดยเฉพาะอย่างยิ่งทวีปยุโรป ได้รับความเจริญจากอารยธรรมโรมันทั้งการเมือง เศรษฐกิจและสังคม<ul id="d34dfcb1-d332-4b8b-91c0-06e8f66eb445" class="bulleted-list"><li style="list-style-type:circle">รับเทพเจ้ากรีกมา ก็นับถือตาม — แล้วพระเยซูก็เกิด</li></ul></li></ul><ul id="abfab420-d350-4930-9846-aad41f3eab82" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>1 AD</strong></mark> — คริสต์ศาสนาแผ่ขยายไปทางตะวันตกของ Palestine ซึ่งอยู่ใต้การปกครองของ Roman</li></ul><ul id="d13bd478-8007-4eab-b0d9-f45e72ffd5d6" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>34 AD</strong></mark> — Peter, St (เปโตร) เดินทางจาก Palestine มาประกาศศาสนาที่กรุงโรม และถูกต่อต้านอย่างรุนแรง <mark class="highlight-gray">(ถูกต่อต้านเพราะว่า Roman นับถือแต่เทพพระเจ้าไง)</mark></li></ul><ul id="b7aa2a23-a802-4bd8-b533-c52fa51bfb80" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>96-180 AD</strong></mark> — เป็นยุคสมัยแห่งความเจริญรุ่งเรืองและสันติภาพของ Roman <strong>(Pax Romana)</strong></li></ul><ul id="d0334b27-095c-4ca6-9357-da01972a36cd" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>180 </strong></mark><mark class="highlight-red"><strong><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">\uparrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↑</span></span></span></span></span><span>﻿</span></span></strong></mark><mark class="highlight-red"><strong> AD</strong></mark><mark class="highlight-red"> </mark>— <span style="border-bottom:0.05em solid">Roman Empire เสื่อมอำนาจ</span>เพราะไม่สามารถปกครองจักรวรรดิขนาดใหญ่ได้</li></ul><ul id="c0796120-c672-4f43-af0a-6ab6702b9ea6" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>306-337 AD </strong></mark>— สมัยพระเจ้า Constantine ได้ปกครอง Roman มีเหตุการณ์สำคัญเกิดขึ้น 2 เหตุการณ์ ได้แก่<ul id="e300f25e-d623-4841-949b-e632559070b0" class="bulleted-list"><li style="list-style-type:circle"><strong>เหตุการณ์ที่ 1: 312 AD</strong> ทรง<mark class="highlight-teal"><span style="border-bottom:0.05em solid"><strong>ยอมรับศาสนาคริสต์</strong></span></mark>เป็นศาสนาประจำ Roman Empire<ul id="385a1310-1ad3-4c44-870f-71cc70e8f13e" class="bulleted-list"><li style="list-style-type:square">313 AD → ทรงประกาศ Edict of Milan ทรงให้ขันติธรรมในการนับถือศาสนา ทำให้คริสต์ศาสนาเผยแผ่ในจักรวรรดิโรมัน ทรงแต่งตั้งตำแหน่งประมุขทางศาสนา คือ พระสันตะปาปา (Pope) ทำให้ศาสนาคริสต์เป็นศาสนาหลักของโลกตะวันตก</li></ul><ul id="85cfb7dc-ad5e-4a9b-b482-07e10ea9758d" class="bulleted-list"><li style="list-style-type:square">Roman Catholic (คริสตัง: ผู้นับถือศาสนาคริสต์นิกายโรมันคาทอลิก)</li></ul></li></ul><ul id="fa7e85ea-7f3d-487e-ad40-2d688ed987cf" class="bulleted-list"><li style="list-style-type:circle"><strong>เหตุการณ์ที่ 2:</strong> การย้ายศูนย์กลางการปกครองจากกรุง Rome ไปยังกรุง Constantinople เรียกว่า Byzantine Empire ใน 330 AD — ทำให้ Byzantine Empire (Eastern Roman Empire) มีศูนย์กลางที่กรุง Constantinople ส่งผลให้ Western Roman Empire เสื่อมอำนาจ</li></ul></li></ul><ul id="388147f4-8f72-4901-a926-0f7be3c6754c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>410 AD</strong></mark> — Western Roman Empire อ่อนแอลง จนถูกอนารยชน (ชนกลุ่มน้อย) ปล้นสะดม 2 เผ่า คือ เผ่าเยอรมันหรือ Goths และพวกฮั่นจากทะเลดำ</li></ul><ul id="326307f4-1bd4-4fa6-b4fa-38ae732b2941" class="block-color-teal_background bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>476 AD</strong></mark> — จักรพรรดิ Theodosius I ของโรมันตะวันตก ถูกพวก Goths โค่นล้ม = สิ้นสุดยุคโบราณ <strong>แต่ Byzantine Empire ยังคงอยู่จนถึง 1453 AD ถูกพวกเติร์กยึดครอง</strong></li></ul><ul id="c813d16e-1943-48af-8db0-40dc2a8eff08" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>313 AD</strong></mark> — จักรพรรดิคอนสแตนตินมหาราช ประกาศกฤษฏีกาให้เสรีภาพในการนับถือคริสต์ศาสนา
+ปลายคริสต์ศตวรรษที่ 4 ถึง คริสต์ศตวรรษที่ 5 จักรวรรดิโรมันเริ่มอ่อนแอ จนในที่สุด กรุงโรมถูกพวกอนารยชนเผ่าเยอรมันหรือเผ่ากอท (Goth) เข้าปล้นสะดม</li></ul><ul id="cf52078a-971f-4f72-a41a-274d80b0f087" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>476 AD</strong></mark><mark class="highlight-red"> </mark>— ถือว่าเป็นปีแห่งจุดสิ้นสุดของจักรวรรดิโรมัน</li></ul><div id="fad90dce-4df9-4db2-848f-e1e7528ed721" class="column-list"><div id="7f98551e-22cc-4494-962a-f9e74780aac6" style="width:68.75%" class="column"><figure id="194d16fe-b3b7-4093-8046-bb739fc39a47" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_314968583.jpg"><img style="width:5616px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/shutterstock_314968583.jpg"/></a></figure></div><div id="58c90a69-8db7-49ae-8607-40ab564b4d99" style="width:31.249999999999993%" class="column"><figure id="1bca37a7-17da-4309-8599-be0d70f1c4e7" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/constantine-the-great-5.jpg"><img style="width:353px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/constantine-the-great-5.jpg"/></a></figure></div></div><h2 id="63790bb0-b9a5-435d-8fd6-f823c6b194ae" class="">มรดกของอารยธรรมโรมัน</h2><h3 id="e1491740-b115-4f1e-8cc8-db83fc3ae991" class="block-color-gray_background">Architecture<mark class="highlight-gray"> (สถาปัตยกรรม)</mark></h3><ul id="8f4e26fb-977c-4ee0-9e49-771c4a8bf508" class="bulleted-list"><li style="list-style-type:disc">The Romans <mark class="highlight-teal"><span style="border-bottom:0.05em solid"><strong>ไม่นิยมสร้างวิหารขนาดใหญ่ถวายเทพเจ้ากรีก</strong></span></mark> แต่นิยมสร้างอาคารต่าง ๆ เพื่อสนองความต้องการของรัฐ และประโยชน์ใช้สอยของสาธารณชน</li></ul><div id="749be32a-e907-44bb-ae77-86f519bd0636" class="column-list"><div id="aa160443-b3ec-406f-84ca-800d6fa72ba3" style="width:56.25%" class="column"><figure id="e0c5c17a-c815-46ab-921b-0c2dc6f44064" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Colosseum-Rome-Italy.jpg.webp"><img style="width:336px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Colosseum-Rome-Italy.jpg.webp"/></a><figcaption>Colosseum</figcaption></figure><p id="270d7a5c-7dec-47c3-b5bd-eeaa23d8d5d6" class="">ชอบดูเอานักสู้มาต่อสู้กัน เอาคนมาสู้กันสิงโต เป็น Gladiators ชนะก็ดัง ได้รับชื่อเสียง</p></div><div id="886c4d44-8db1-49f4-ac02-d905ec9300e1" style="width:43.75%" class="column"><figure id="8f3214c2-fb0e-4f9b-be7c-4735c68fac62" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Roman_Baths_in_Bath_Spa_England_-_July_2006.jpg"><img style="width:2638px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Roman_Baths_in_Bath_Spa_England_-_July_2006.jpg"/></a><figcaption>สถานที่อาบน้ำสาธารณะ (Public Baths)</figcaption></figure><p id="68a2b5cc-2ea6-4cf5-b826-3f205e1d8fd4" class="">อยู่ที่เมืองบาธ (Bath) ประเทศอังกฤษ</p></div></div><h3 id="40d3afe5-798d-4ac7-87ab-6a607f21e667" class="block-color-gray_background">ประติมากรรม</h3><ul id="e0985b65-c597-438f-b18e-80086a1e84e0" class="bulleted-list"><li style="list-style-type:disc">ประติมากรรมของโรมันจะสะท้อนบุคลิกภาพของมนุษย์อย่างสมจริงตามธรรมชาติ มีสัดส่วนงดงามเหมือนกรีก แต่โรมันจะพัฒนาศิลปะด้านการแกะสลักรูปเหมือนของบุคคลสำคัญ ๆ เช่น จักรพรรดิ นักการเมือง</li></ul><p id="a6bd9cf1-039c-4a2d-905d-b9b6a17fea21" class=""><strong>สวยแบบ Greek นั่นแหละ แต่จะปั้นทำไมเทพเจ้า ปั้นบุคคลสำคัญของเราดีกว่า เช่น พระสันตปาปา (Pope)</strong></p><figure id="745e3990-335f-4447-8955-b5edf3642ac8" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%203.png"><img style="width:384px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%203.png"/></a></figure><h3 id="1c98e746-6a3b-4bda-8ff7-475ea96bca71" class="block-color-gray_background">วรรณกรรม</h3><ul id="3de7ac5c-61a0-4735-bf0b-532d56db62e0" class="bulleted-list"><li style="list-style-type:disc">ช่วง 100 BC เมื่อภาษาละตินได้พัฒนาจนกลายเป็นภาษาที่สละสลวย ชาวโรมันจึงหันมานิยมการแต่งคำประพันธ์</li></ul><ul id="5a0bad92-b096-434e-b3f8-265a8c9b6bff" class="bulleted-list"><li style="list-style-type:disc">งานประพันธ์ของกรีกมีสีสันและจินตนาการที่กว้างไกล เช่น เทพปกรณัม</li></ul><ul id="8cb7d8d2-f8a0-489e-9309-13918d91fa91" class="bulleted-list"><li style="list-style-type:disc">งานประพันธ์ที่เป็นของโรมันแท้ ๆ จะมีการเขียนสดุดีความยิ่งใหญ่ของโรมัน เช่น งานประพันธ์ของ Virgil, งานประพันธ์ร้อยแก้วของ Cicero</li></ul><figure id="3b999a07-41ff-431f-ab84-2371b288aa35" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%204.png"><img style="width:384px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%204.png"/></a></figure><h3 id="28c87f1c-5b0e-453c-b3d5-b1f11fd3e75c" class="block-color-gray_background">วิศวกรรม</h3><ul id="58d38cb7-b1f0-4574-b5d7-08dee61e4131" class="bulleted-list"><li style="list-style-type:disc">โรมันประสบความสำเร็จในการสร้างถนนคอนกรีตที่มีความแข็งแรงทนทาน สองข้างถนนมีท่อระบายน้ำและมีหลักบอก Distance</li></ul><ul id="177b06aa-ef55-4f4d-b15c-825cd16d0747" class="bulleted-list"><li style="list-style-type:disc">ถนนที่ใช้มาถึงปัจจุบัน ได้แก่ ถนนแอปเพียน (Appian Ways) ใน Italy</li></ul><ul id="e0b4295b-4c9a-4e9f-9c77-153dad6ae852" class="bulleted-list"><li style="list-style-type:disc">ถนนทุกสายจะแข็งแรง และเชื่อมหากรุงโรม</li></ul><figure id="a1ce7352-6672-4013-8147-09c20cc56f19" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/f92098b7-79f5-42c0-aac7-bc8847d7af08.jpg"><img style="width:384px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/f92098b7-79f5-42c0-aac7-bc8847d7af08.jpg"/></a><figcaption>Appian Ways ที่ออกสอบ O-NET</figcaption></figure><h3 id="bab578c6-58cb-4a23-ad37-bd50c295f84a" class="block-color-gray_background">ปฏิทิน</h3><ul id="ca8ececd-614e-474f-90c9-c3c1db520874" class="bulleted-list"><li style="list-style-type:disc">เดิมชาวโรมันใช้ปฏิทินจันทรคติ (Lunar calendar) ปีหนึ่งมี 10 เดือน ภายหลังเพิ่มเป็น 12 เดือน</li></ul><ul id="2316255e-6787-4fa5-83cc-ff57559ae2c4" class="bulleted-list"><li style="list-style-type:disc">เมื่อ<strong><mark class="highlight-red"> 45 BC</mark></strong><mark class="highlight-red"> </mark>—  Julius Caesar ให้ใช้ปฎิทินจูเลียน (Julian calendar) ซึ่งเป็นแบบสุริยคติ (Solar calendar) ปีหนึ่งมี 12 เดือน แต่ละปีมี 365 วัน ให้เพิ่มวันในเดือนกุมภาพันธ์ทุก 4 ปี ให้เป็นปีที่มี 366 วัน</li></ul><ul id="dd78cc52-fef9-40ad-a0fb-634227660cc9" class="bulleted-list"><li style="list-style-type:disc">Julian calendar ใช้มานานถึง 1,600 ปี จึงมีการปรับปรุงเป็น <mark class="highlight-teal"><strong>Gregorian calendar</strong></mark> ใน 1582 AD</li></ul><figure id="9892f0d9-e558-4d71-8353-ca5a118680a4" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%205.png"><img style="width:205px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/Untitled%205.png"/></a></figure><h3 id="7f7a6b1d-ee29-416e-a1c9-84c44017da21" class="block-color-gray_background">กฎหมาย</h3><ul id="3923016c-efa8-47de-9a3b-53a7e159003c" class="bulleted-list"><li style="list-style-type:disc">กฎหมายในระยะแรกไม่ได้เขียนเป็นลายลักษณ์อักษร</li></ul><ul id="e56410b6-062c-4371-a60a-11e1f770d1ca" class="bulleted-list"><li style="list-style-type:disc">กฏหมายโรมันเริ่มมีการพัฒนาสมัยสาธารณรัฐ
+กฏหมายบ้านเมือง &gt; เกิดกฎหมายสิบสองโต๊ะ (Law of the Twelve Tables)</li></ul><ul id="67256041-f14f-4eaf-b5c7-ffd48d10cef7" class="bulleted-list"><li style="list-style-type:disc">JUSTINIAN CODE</li></ul><figure id="4148b147-e99c-4a8c-8063-f09be3bd5263" class="image"><a href="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/f63189b84bee94aecaa8f58435ca31f4.jpeg"><img style="width:336px" src="%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%20691db12fc28d47ae93b7fe60f4420fdb/f63189b84bee94aecaa8f58435ca31f4.jpeg"/></a></figure><p id="d5e776be-63a2-41f4-a60b-74d0e4dbe0a9" class=""><mark class="highlight-yellow"><span style="border-bottom:0.05em solid"><strong>กฎหมาย 12 โต๊ะ</strong></span></mark></p><ul id="8b7ac1e4-e453-4693-b4a2-d0e250d567f7" class="bulleted-list"><li style="list-style-type:disc"><strong>โต๊ะที่ 1-3 — </strong>การพิจารณาความแพ่งและการบังคับคดี</li></ul><ul id="aa696da9-4cf3-402e-a750-feccfd2dd6cb" class="bulleted-list"><li style="list-style-type:disc"><strong>โต๊ะที่ 4 — </strong>อำนาจของบิดาในครอบครัว<ul id="17246815-101a-4cfe-93bb-5baa15c17b31" class="bulleted-list"><li style="list-style-type:circle">ให้ความสำคัญกับผู้เป็นใหญ่ในบ้าน</li></ul></li></ul><ul id="a5af6a1e-19b0-4332-8a1f-3999465b2222" class="bulleted-list"><li style="list-style-type:disc"><strong>โต๊ะที่ 5-7 — </strong>การใช้อำนาจปกครองมรดก ทรัพย์สิน<ul id="540fe9da-a275-417e-b9dd-5babf5328257" class="bulleted-list"><li style="list-style-type:circle">แปลว่า Roman มีเงินเยอะ</li></ul></li></ul><ul id="dec5585e-05c6-4567-95fa-b88841e6c172" class="bulleted-list"><li style="list-style-type:disc"><strong>โต๊ะที่ 8 — </strong>การละเมิดและการกระทำความผิดอาญา<ul id="a2636ca6-f3b9-449f-9960-2f8173dd8de5" class="bulleted-list"><li style="list-style-type:circle">คดีที่ไม่สามารถยอมความได้</li></ul></li></ul><ul id="3c365da3-2944-4c1a-a977-b77301b23201" class="bulleted-list"><li style="list-style-type:disc"><strong>โต๊ะที่ 9 — </strong>กฎหมายมหาชน</li></ul><ul id="8bbdc096-9b08-46a0-942d-655fc5ea1581" class="bulleted-list"><li style="list-style-type:disc"><strong>โต๊ะที่ 10 — </strong>กฎหมายศักดิ์สิทธิ์ (ศาสนา)</li></ul><ul id="391284ef-b789-46b9-9944-b13b5f60e2c4" class="bulleted-list"><li style="list-style-type:disc"><strong>โต๊ะที่ 11-12 — </strong>กฎหมายอื่น ๆ</li></ul><h3 id="e8d05f9a-3445-482e-87b9-e869a6a9ce4b" class="block-color-gray_background">ภาษาละติน</h3><ul id="ddd32096-277d-4b40-ac62-efbf01363110" class="bulleted-list"><li style="list-style-type:disc">ชาวโรมันพัฒนาภาษาละตินจากตัวอักษรกรีกของพวก Etruscan มีจำนวน 23 ตัว ต่อมาภาษาละตินใช้กันอย่างแพร่หลาย และภายหลังใช้ในทางศาสนาและใช้ในมหาวิทยาลัยในยุโรปในสมัยกลาง ซึ่งภาษาละตินเป็นภาษารากฐานของภาษาต่าง ๆ ในยุโรป แม้กระทั่งปัจจุบันแพทย์และนักวิทยาศาสตร์ยังใช้ศัพท์ทางวิชาการเป็นคำ Latin</li></ul><h3 id="7004aa6e-c351-405f-a03e-f84d3074bd3e" class="block-color-gray_background">การแพทย์</h3><ul id="759664e1-ec33-4ac6-8951-03d5146ce793" class="bulleted-list"><li style="list-style-type:disc">รู้จักใช้เครื่องมือผ่าตัด ประเภทปากคีบ คีมและเครื่องมืออื่น ๆ ผ่าตัดทอลซิล (Tonsils), คอพอก (Goiter) และนิ่ว</li></ul><ul id="5a058bc2-d3dd-401e-9c17-3b7813e12a84" class="bulleted-list"><li style="list-style-type:disc">โรมันเป็นชาติแรกที่ทำคลอดทารกโดยวิธีการผ่าตัดทางหน้าท้อง เรียกว่า Caesarean Operation<ul id="7f51008f-aa88-44f4-b5d4-0a26a9066771" class="bulleted-list"><li style="list-style-type:circle">ให้การคลอดทารกชื่อ “Julius Caesar”</li></ul></li></ul></div></article></body></html>
