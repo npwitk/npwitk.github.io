@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apple-style countdown page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		}
+
+		#centered-img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 80vh;
+		}
+
+		#countdown {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 50px;
+			background-color: #000;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<div id="centered-img">
+		<img src="https://media.giphy.com/media/l0MYMhJv7wab2QARa/giphy.gif" alt="An animated GIF">
+	</div>
+	<div id="countdown">
+		<span id="timer">20</span>
+	</div>
+
+	<script>
+		// Set the countdown timer
+		var count = 20;
+		var timer = setInterval(function() {
+			count--;
+			document.getElementById("timer").innerHTML = count;
+			if (count == 0) {
+				clearInterval(timer);
+				window.location.href = "https://www.apple.com";
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
