@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: center;
+        background-color: #f2f2f2;
+      }
+      
+      h1 {
+        font-size: 3em;
+        margin-top: 3em;
+      }
+      
+      input {
+        font-size: 2em;
+        padding: 0.5em;
+        margin: 1em;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      button {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thank You for Coming!</h1>
+    <p>Enter the 4-Digit Code to Unlock Your Special Thank You Card:</p>
+    <form>
+      <input type="text" id="code" name="code" maxlength="4" pattern="\d{4}" required>
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      const codes = {
+        "1234": "https://example1.com",
+        "5678": "https://example2.com",
+        "9012": "https://example3.com"
+      }; // Replace with your own codes and URLs
+      const input = document.getElementById("code");
+      input.addEventListener("input", () => {
+        const code = input.value;
+        if (codes.hasOwnProperty(code)) {
+          window.location.href = codes[code];
+        }
+      });
+      // Obfuscate the code to make it harder to steal
+      document.addEventListener("keydown", (event) => {
+        const keyCode = event.keyCode || event.which;
+        if (keyCode === 13) {
+          const charCode = (Math.floor(Math.random() * 10) + 48).toString();
+          const randomCode = Object.keys(codes)[Math.floor(Math.random() * Object.keys(codes).length)];
+          const newCode = randomCode.substr(0, 3) + charCode;
+          input.value = newCode;
+          if (codes.hasOwnProperty(newCode)) {
+            window.location.href = codes[newCode];
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
