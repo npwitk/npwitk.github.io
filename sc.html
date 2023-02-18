@@ -37,10 +37,11 @@
     </form>
     <script>
       const codes = {
-        "1234": "/Card/test01.jpg",
-        "5678": "https://example2.com",
-        "9012": "https://example3.com"
-      }; // Replace with your own codes and URLs
+        "3659": "/Card/1voOgWYdc56p.jpg",
+        "2815": "/Card/ML8taA72Tl7Y.jpg",
+        "8596": "/Card/aNjc8sdRuR30.jpg",
+        "0000": "/Card/O0jdXdZt4WM7.jpg"
+      }; 
       const input = document.getElementById("code");
       input.addEventListener("input", () => {
         const code = input.value;
@@ -48,7 +49,7 @@
           window.location.href = codes[code];
         }
       });
-      // Obfuscate the code to make it harder to steal
+      
       document.addEventListener("keydown", (event) => {
         const keyCode = event.keyCode || event.which;
         if (keyCode === 13) {
