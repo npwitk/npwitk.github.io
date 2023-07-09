@@ -55,8 +55,9 @@
 }
 
 .mydiv {
-    font-family: "SF Pro Text";
+    font-family: "SF Pro Display";
 }
+
 @font-face {
 	font-family:'SF Pro Display';
 	font-style:normal;
