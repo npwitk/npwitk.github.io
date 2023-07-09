@@ -1,64 +1,22 @@
 /* Light mode */
 @media (prefers-color-scheme: light) {
     body {
-        color: #835A03;
-    }
-    .monday {
-        background-color: Yellow;
-    }
-    .tuesday {
-        background-color: Pink;
-    }
-    .wednesday {
-        background-color: Green;
-    }
-    .thursday {
-        background-color: Orange;
-    }
-    .friday {
-        background-color: Blue;
-    }
-    .saturday {
-        background-color: Purple;
-    }
-    .sunday {
-        background-color: Red;
-    }
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
+    background-color: #FCAD00;
+    color: #835A03;
+            }
+        }
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
     body {
-        background-color: #473002;
-        color: #FCAD00;
+    background-color: #473002;
+    color: #FCAD00;
+            }
+        }
+    
+    .mydiv {
+        font-family: "SF Pro Display"
     }
-    .monday {
-        background-color: #473002;
-    }
-    .tuesday {
-        background-color: #473002;
-    }
-    .wednesday {
-        background-color: #473002;
-    }
-    .thursday {
-        background-color: #473002;
-    }
-    .friday {
-        background-color: #473002;
-    }
-    .saturday {
-        background-color: #473002;
-    }
-    .sunday {
-        background-color: #473002;
-    }
-}
 
-.mydiv {
-    font-family: "SF Pro Display", sans-serif;
-    font-weight: 200;
-}
 
 @font-face {
     font-family:'SF Pro Display';
