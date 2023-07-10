@@ -23,14 +23,14 @@
     }
     .Friday {
         background-color: #3AC5F3;
-        color: #0F7095;
+        color: #004D66;
     }
     .Saturday {
-        background-color: #8465A6;
+        background-color: #BCABCF;
         color: #2C1A3B;
     }
     .Sunday {
-        background-color: #ED2024;
+        background-color: #EF343A;
         color: #7A1214;
     }
 }
@@ -59,16 +59,16 @@
         color: #F26521;
     }
     .Friday {
-        background-color: #0F7095;  /* Dark Blue */
+        background-color: #004D66;  /* Dark Blue */
         color: #3AC5F3;
     }
     .Saturday {
         background-color: #2C1A3B;  /* Dark Purple */
-        color: #8465A6;
+        color: #BCABCF;
     }
     .Sunday {
         background-color: #7A1214;  /* Dark Red */
-        color: #ED2024;
+        color: #EF343A;
     }
 }
 
