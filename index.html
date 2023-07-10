@@ -22,7 +22,7 @@
         }
     </style>
 </head>
-<body class="div">
+<body id="body" class="div">
     <p>
         <font size="7"><b>NONPRAWICH I.</b></font> <br>
         <i>Hello, World!</i>
@@ -30,5 +30,21 @@
         <a href="about" style="color: white; text-decoration: none;">about me</a> |
         <a href="contact" style="color: white; text-decoration: none;">contact</a>
     </p>
+
+    <script>
+        window.onload = function() {
+            var body = document.getElementById('body');
+            var day = new Date().getDay();
+            switch(day) {
+                case 0: body.className = 'Sunday'; break;
+                case 1: body.className = 'Monday'; break;
+                case 2: body.className = 'Tuesday'; break;
+                case 3: body.className = 'Wednesday'; break;
+                case 4: body.className = 'Thursday'; break;
+                case 5: body.className = 'Friday'; break;
+                case 6: body.className = 'Saturday'; break;
+            }
+        }
+    </script>
 </body>  
 </html>
