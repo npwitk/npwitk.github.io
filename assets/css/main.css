@@ -7,24 +7,31 @@
     
     .Monday {
         background-color: #FCAD00;
+        color: #D41967;
     }
     .Tuesday {
         background-color: #EEBCBC;
+        color: #D41967;
     }
     .Wednesday {
         background-color: #C6D92C;
+        color: #455224;
     }
     .Thursday {
         background-color: #F26521;
+        color: #87381C;
     }
     .Friday {
         background-color: #3AC5F3;
+        color: #0F7095;
     }
     .Saturday {
         background-color: #8465A6;
+        color: #2C1A3B;
     }
     .Sunday {
         background-color: #ED2024;
+        color: #7A1214;
     }
 }
 
@@ -37,24 +44,31 @@
     
     .Monday {
         background-color: #473002;  /* Dark Yellow */
+        color: #FCAD00;
     }
     .Tuesday {
         background-color: #D41967;  /* Dark Pink */
+        color: #EEBCBC;
     }
     .Wednesday {
         background-color: #455224;  /* Dark Green */
+        color: #C6D92C;
     }
     .Thursday {
         background-color: #87381C;  /* Dark Orange */
+        color: #F26521;
     }
     .Friday {
         background-color: #0F7095;  /* Dark Blue */
+        color: #3AC5F3;
     }
     .Saturday {
         background-color: #2C1A3B;  /* Dark Purple */
+        color: #8465A6;
     }
     .Sunday {
         background-color: #7A1214;  /* Dark Red */
+        color: #ED2024;
     }
 }
 
