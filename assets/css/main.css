@@ -2,29 +2,29 @@
 @media (prefers-color-scheme: light) {
     body {
         background-color: #FCAD00;
-        color: #835A03;
+        color: #473002;
     }
     
     .Monday {
-        background-color: yellow;
+        background-color: #FCAD00;
     }
     .Tuesday {
-        background-color: pink;
+        background-color: #EEBCBC;
     }
     .Wednesday {
-        background-color: green;
+        background-color: #C6D92C;
     }
     .Thursday {
-        background-color: orange;
+        background-color: #F26521;
     }
     .Friday {
-        background-color: blue;
+        background-color: #3AC5F3;
     }
     .Saturday {
-        background-color: purple;
+        background-color: #8465A6;
     }
     .Sunday {
-        background-color: red;
+        background-color: #ED2024;
     }
 }
 
@@ -36,25 +36,25 @@
     }
     
     .Monday {
-        background-color: #999900;  /* Dark Yellow */
+        background-color: #473002;  /* Dark Yellow */
     }
     .Tuesday {
-        background-color: #993366;  /* Dark Pink */
+        background-color: #D41967;  /* Dark Pink */
     }
     .Wednesday {
-        background-color: #006600;  /* Dark Green */
+        background-color: #455224;  /* Dark Green */
     }
     .Thursday {
-        background-color: #ff6600;  /* Dark Orange */
+        background-color: #87381C;  /* Dark Orange */
     }
     .Friday {
-        background-color: #0000ff;  /* Dark Blue */
+        background-color: #0F7095;  /* Dark Blue */
     }
     .Saturday {
-        background-color: #660066;  /* Dark Purple */
+        background-color: #2C1A3B;  /* Dark Purple */
     }
     .Sunday {
-        background-color: #990000;  /* Dark Red */
+        background-color: #7A1214;  /* Dark Red */
     }
 }
 
