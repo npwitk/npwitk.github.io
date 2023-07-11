@@ -1,8 +1,8 @@
 /* Light mode */
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #FCAD00;
-        color: #473002;
+        background-color: #ffffff; /* Default naja */
+        color: #1E1E1F;
     }
     
     .Monday {
@@ -38,32 +38,32 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #473002;
-        color: #FCAD00;
+        background-color: #1E1E1F;
+        color: #ffffff;
     }
     
     .Monday {
-        background-color: #473002;  /* Dark Yellow */
+        background-color: #473002;
         color: #FCAD00;
     }
     .Tuesday {
-        background-color: #D41967;  /* Dark Pink */
+        background-color: #D41967;
         color: #EEBCBC;
     }
     .Wednesday {
-        background-color: #455224;  /* Dark Green */
+        background-color: #455224;
         color: #C6D92C;
     }
     .Thursday {
-        background-color: #87381C;  /* Dark Orange */
+        background-color: #87381C;
         color: #F26521;
     }
     .Friday {
-        background-color: #004D66;  /* Dark Blue */
+        background-color: #004D66;
         color: #3AC5F3;
     }
     .Saturday {
-        background-color: #2C1A3B;  /* Dark Purple */
+        background-color: #2C1A3B;
         color: #BCABCF;
     }
     .Sunday {
