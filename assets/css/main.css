@@ -81,7 +81,7 @@
         font-family:'SF Pro Thai';
         font-style:normal;
         font-weight:100;
-        src:local('☺'), url("https://www.apple.com/wss/fonts/SF-Pro-TH/v3/SFProTH.woff2") format("woff2"), url("https://www.apple.com/wss/fonts/SF-Pro-TH/v3/SFProTH.woff2") format("woff"), url("/assets/fonts/sf-pro-display_ultralight.ttf") format("truetype");
+        src:local('☺'), url("/assets/fonts/SFProTH.woff2") format("woff2"), url("/assets/fonts/SFProTH.woff2") format("truetype");
     }
     
     @font-face {
