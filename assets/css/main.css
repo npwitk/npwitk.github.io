@@ -1,8 +1,8 @@
 /* Light mode */
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #ffffff; /* Default naja */
-        color: #1E1E1F;
+        background-color: #C6C6C6; /* Default naja */
+        color: #1F1C1D;
     }
     
     .Monday {
@@ -38,8 +38,8 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #1E1E1F;
-        color: #ffffff;
+        background-color: #1F1C1D;
+        color: #C6C6C6;
     }
     
     .Monday {
