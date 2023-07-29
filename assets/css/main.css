@@ -1,5 +1,6 @@
 /* Light mode */
 @media (prefers-color-scheme: light) {
+
     body {
         background-color: #C6C6C6; /* Default naja */
         color: #1F1C1D;
@@ -37,6 +38,8 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
+
+
     body {
         background-color: #1F1C1D;
         color: #C6C6C6;
