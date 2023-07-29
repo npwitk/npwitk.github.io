@@ -19,13 +19,42 @@
             width: 99%;
             height: 97%;
             position: absolute;
-            display: table;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee;
         }
-        p {
-            display: table-cell;
-            vertical-align: middle;
+        .mac-window {
+            display: inline-block;
             text-align: center;
-            line-height: 1.5;
+            position: relative;
+            border-radius: 10px;
+            background-color: transparent;
+            border: 2px solid rgba(0, 0, 0, 0.75); /* Adjust thickness and color as needed */
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .mac-window .buttons {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .mac-window .buttons div {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+
+        }
+        .mac-window .buttons .close {
+            background-color: #FF605C;
+        }
+        .mac-window .buttons .minimize {
+            background-color: #FFBD44;
+        }
+        .mac-window .buttons .maximize {
+            background-color: #00CA4E;
         }
         .cursor {
             animation: blink 1s infinite;
@@ -36,13 +65,20 @@
     </style>
 </head>
 <body id="body" class="div">
-    <p>
-        <font size="7"><b>> NONPRAWICH I.</b><span class="cursor"> _</span></font> <br>
+    <div class="mac-window">
+        <div class="buttons">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+        </div>
+        <p>
+            <font size="7"><b>> NONPRAWICH I.</b><span class="cursor"> _</span></font> <br>
         <span>Hello, World!</span> 
         <br>
         <a href="about" style="color: white; text-decoration: none;">about me</a> |
         <a href="contact" style="color: white; text-decoration: none;">contact</a>
-    </p>
+        </p>
+    </div>
 
     <script>
         window.onload = function() {
