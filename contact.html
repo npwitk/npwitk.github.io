@@ -1,5 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
 <style>
 body {
   top: 0;
@@ -8,6 +12,9 @@ body {
   height: 97%;
   position: absolute;
   display: table;
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 p {
@@ -16,22 +23,48 @@ p {
   text-align: center;
   line-height: 1.5;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#copiedMessage {
+  display: none;
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
 </style>
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    var message = document.getElementById('copiedMessage');
+    message.style.display = 'block';
+    setTimeout(function() {
+      message.style.display = 'none';
+    }, 2000);
+  }, function(err) {
+    console.error('Could not copy text: ', err);
+  });
+}
+</script>
 </head>
-<body class="mydiv">
-<title>Contact</title>
+<body>
 <p>
-email: <a href="mailto:hey@npwitk.com" style="color: white; text-decoration: none;"><i>hey@npwitk.com</i></a>
+email: <a href="#" onclick="copyToClipboard('hey@npwitk.com'); return false;"><i>hey@npwitk.com</i></a>
 <br>
-tel: <a href="tel:+66956388462" style="color: white; text-decoration: none;">+66 956388462</a>
+tel: <a href="tel:+66956388462">+66 956388462</a>
 <br>
 <link rel="stylesheet" href="assets/css/contact.css">
-<a href="http://instagram.npwitk.com" style="color: white; text-decoration: none;">instagram</a> |
-<a href="http://x.npwitk.com" style="color: white; text-decoration: none;">𝕏 (twitter)</a> |
-<a href="http://fb.npwitk.com" style="color: white; text-decoration: none;">facebook</a> |
-<a href="http://yt.npwitk.com" style="color: white; text-decoration: none;">youtube</a> |
-<a href="http://linkedin.npwitk.com" style="color: white; text-decoration: none;">linkedin</a> |
-<a href="sms:+66956388462" style="color: white; text-decoration: none;">iMessage</a>
+<a href="http://instagram.npwitk.com">instagram</a> |
+<a href="http://x.npwitk.com">𝕏 (twitter)</a> |
+<a href="http://fb.npwitk.com">facebook</a> |
+<a href="http://yt.npwitk.com">youtube</a> |
+<a href="http://linkedin.npwitk.com">linkedin</a> |
+<a href="sms:+66956388462">iMessage</a>
+<br>
+<span id="copiedMessage">Email address copied to clipboard!</span>
 </p>
 </body>
 </html>
