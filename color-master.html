@@ -1,75 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Master</title>
     <style>
-
+        /* Mesh Gradient Background Animation */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #fff;
-            color: #333;
             margin: 0;
             padding: 0;
-            /* Mesh from third-party na */
-            background-color: hsla(0,100%,50%,1);
-            background-image:
-            radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
-            radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
-            radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
-            radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
-            radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
-            radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
-            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
-        }
-        header {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f5f5;
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
+            height: 100vh;
+            background-color: hsla(0, 100%, 50%, 1);
+            background-image: radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+                              radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+                              radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+                              radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+                              radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+                              radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+                              radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+            animation: moveBackground 10s ease infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Main content styles */
+        .container {
+            text-align: center;
+        }
+        .logo {
+            width: 150px; /* Adjust logo size */
+            animation: scale-in 1s ease-out;
         }
         h1 {
-            font-size: 1.5em;
+            font-size: 2em;
+            margin: 20px 0;
+            color: #fff;
+        }
+        .app-badge {
+            margin-top: 10px;
         }
         footer {
             position: fixed;
-            bottom: 0;
+            bottom: 10px;
             width: 100%;
-            padding: 20px;
             text-align: center;
-            border-top: 1px solid #ddd;
-            background-color: #f5f5f5;
         }
         footer a {
-            color: #666;
+            margin: 0 10px;
+            color: #fff;
             text-decoration: none;
+            font-size: 0.9em;
         }
         footer a:hover {
-            color: #333;
+            text-decoration: underline;
         }
 
-        @keyframes scale-in {
-            from {
-                transform: scale(0);
-            }
-            to {
-                transform: scale(1);
-            }
-        }
-        .logo {
-            animation: scale-in 1s ease-out;
-        }
     </style>
-    <link rel="stylesheet" type="text/css" href="/color-master/assets/styles.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <img src="/color-master/assets/logo.png" alt="Color Master Logo" class="logo">
         <h1>Color Master</h1>
-        <a href="https://apps.apple.com/us/app/colour-master/id6450627284">
-            <img src="/color-master/assets/preorderbadge.svg" alt="Pre-order on App Store">
+        <a href="https://apps.apple.com/us/app/colour-master/id6450627284" class="app-badge">
+            <img src="/color-master/assets/download_badge.svg" alt="Download on App Store">
         </a>
-    </header>
+    </div>
+    
     <footer>
         <a href="http://npwitk.com/color-master/legal/privacy.pdf">Privacy Policy</a> |
         <a href="http://npwitk.com/color-master/legal/terms.pdf">Terms & Conditions</a>
