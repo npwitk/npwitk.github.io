@@ -33,11 +33,38 @@
         @keyframes blink {
             50% { opacity: 0; }
         }
+
+        /* Variable font styling */
+        .animated-text span {
+            font-family: "SF Pro Text", sans-serif;
+            font-variation-settings: 'wght' 200;
+            animation: breath 1.5s alternate ease-in-out infinite;
+            animation-fill-mode: both;
+        }
+
+        @keyframes breath {
+            0% {
+                font-variation-settings: 'wght' 200;
+            }
+            100% {
+                font-variation-settings: 'wght' 700;
+            }
+        }
+
+        /* Setup for the body styles */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
     </style>
 </head>
 <body id="body" class="div">
-    <p>
-        <font size="7"><b>> NONPRAWICH INTAKAEW</b><span class="cursor"> _</span></font> <br>
+    <p class="animated-text">
+        <font size="7"><b>
+            <span>N</span><span>O</span><span>N</span><span>P</span><span>R</span><span>A</span><span>W</span><span>I</span><span>C</span><span>H</span> <span>I</span><span>N</span><span>T</span><span>A</span><span>K</span><span>A</span><span>E</span><span>W</span>
+        </b><span class="cursor"> _</span></font> <br>
         <span>Hello, World!</span> 
         <br>
         <a href="about" style="color: white; text-decoration: none;">about me</a> |
