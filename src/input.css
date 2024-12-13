@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/sf-pro-display_regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GreenMarker';
+  src: url('../assets/fonts/greenmarker.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'SF Pro Display', system-ui, sans-serif;
+}
+
+.font-greenmarker {
+  font-family: 'GreenMarker', cursive;
+}
