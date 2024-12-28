@@ -1,77 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link rel="stylesheet" href="assets/css/contact.css">
-<style>
-body {
-  top: 0;
-  left: 0;
-  width: 99%;
-  height: 97%;
-  position: absolute;
-  display: table;
-  background-color: #1E1E1F;
-  color: #D2D238;
-  font-family: 'SF Pro Text', sans-serif; 
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information for Nonprawich Intakaew">
+    <title>Contact</title>
+    <style>
+        body {
+            top: 0;
+            left: 0;
+            width: 99%;
+            height: 97%;
+            position: absolute;
+            display: table;
+            background-color: #1E1E1F;
+            color: #D2D238;
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-p {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  line-height: 1.5;
-  position: relative;
-}
+        p, .content-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 1.8;
+            position: relative;
+            font-size: 1.1rem;
+        }
 
-a {
-  color: white;
-  text-decoration: none;
-}
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 3px 6px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
 
-#copiedMessage {
-  display: none;
-  position: absolute;
-  background-color: #4CAF50;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 3px;
-  bottom: 50px; 
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-}
-</style>
-<script>
-function copyToClipboard(text) {
-  navigator.clipboard.writeText(text).then(function() {
-    var message = document.getElementById('copiedMessage');
-    message.style.display = 'block';
-    setTimeout(function() {
-      message.style.display = 'none';
-    }, 2000);
-  }, function(err) {
-    console.error('Could not copy text: ', err);
-  });
-}
-</script>
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-1px);
+        }
+
+        a:active {
+            transform: translateY(0);
+        }
+
+        .copy-email {
+            cursor: pointer;
+            font-style: italic;
+        }
+
+        .copy-email:hover {
+            color: #D2D238;
+        }
+
+        #copiedMessage {
+            display: none;
+            position: fixed;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            z-index: 1000;
+            opacity: 0;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        #copiedMessage.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            p {
+                font-size: 1rem;
+                line-height: 2;
+            }
+        }
+    </style>
 </head>
 <body>
-<p>
-email: <a href="#" onclick="copyToClipboard('hey@npwitk.com'); return false;"><i>hey@npwitk.com</i></a>
-<br>
-tel: <a href="tel:+66956388462">+66 956388462</a>
-<br>
-<a href="http://instagram.npwitk.com">instagram</a> |
-<a href="http://x.npwitk.com">x (formerly twitter)</a> |
-<a href="http://fb.npwitk.com">facebook</a> |
-<a href="http://yt.npwitk.com">youtube</a> |
-<a href="http://linkedin.npwitk.com">linkedin</a> |
-<a href="http://github.com/npwitk">github</a> |
-<a href="sms:+66956388462">iMessage</a>
-</p>
-<div id="copiedMessage">Email address copied to clipboard!</div>
+    <p>
+        email: <a href="#" class="copy-email" onclick="copyToClipboard('hey@npwitk.com'); return false;">hey@npwitk.com</a>
+        <br>
+        tel: <a href="tel:+66956388462">+66 956388462</a>
+        <br>
+        <a href="http://instagram.npwitk.com" target="_blank" rel="noopener noreferrer">instagram</a> |
+        <a href="http://x.npwitk.com" target="_blank" rel="noopener noreferrer">x (formerly twitter)</a> |
+        <a href="http://fb.npwitk.com" target="_blank" rel="noopener noreferrer">facebook</a> |
+        <a href="http://yt.npwitk.com" target="_blank" rel="noopener noreferrer">youtube</a> |
+        <a href="http://linkedin.npwitk.com" target="_blank" rel="noopener noreferrer">linkedin</a> |
+        <a href="http://github.com/npwitk" target="_blank" rel="noopener noreferrer">github</a> |
+        <a href="sms:+66956388462">iMessage</a>
+    </p>
+    <div id="copiedMessage">Email address copied to clipboard!</div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    const message = document.getElementById('copiedMessage');
+                    message.style.display = 'block';
+                    message.offsetHeight;
+                    message.classList.add('show');
+                    
+                    setTimeout(() => {
+                        message.classList.remove('show');
+                        setTimeout(() => {
+                            message.style.display = 'none';
+                        }, 300);
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Could not copy text: ', err);
+                });
+        }
+    </script>
 </body>
 </html>

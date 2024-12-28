@@ -22,6 +22,10 @@
             line-height: 1.5;
         }
 
+        h3 {
+            color:lightsalmon
+        }
+
         h1 {
             font-size: 2em;
             margin-bottom: 0.5em;
@@ -41,18 +45,34 @@
     <title>About me</title>
 </head>
 <body>
-<div class="container">
-    <h1>Nonprawich Intakaew (<span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span>)</h1>
-    <p>
-    19 y/o
+    <div class="container">
+        <h1>Nonprawich Intakaew (<span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span>)</h1>
+        <p>
+            <span id="age"></span> years old
+            <br> Bangkok, Thailand
+            <br> Student
+        </p>
+        <p>
+            <span class="bold-label">Previous:</span> The Prince Royal's College
+            <br> <span class="bold-label">Current:</span> SIIT (Computer Engineering), Thammasat University
+        </p>
+        <h3>
+            <i>New page coming soon.</i>
+        </h3>
+    </div>
+    
+    <script>
+    function updateAge() {
+        const birthday = new Date('2004-12-26T00:00:00');
+        const now = new Date();
+        const ageInMilliseconds = now - birthday;
+        const ageInYears = ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000);
+        document.getElementById('age').textContent = ageInYears.toFixed(26);
+    }
 
-    <br> Bangkok, Thailand
-    <br> Student
-    </p>
-    <p>
-    <span class="bold-label">Previous:</span> The Prince Royal's College
-    <br> <span class="bold-label">Current:</span> SIIT (Computer Engineering), Thammasat University
-    </p>
-</div>
-</body>
-</html>
+    updateAge();
+    
+    setInterval(updateAge, 50);
+    </script>
+    </body>
+    </html>
