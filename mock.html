@@ -3,88 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mock Exam Collection</title>
+    <title>Peanut Mock Exam Collection</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            background-color: #f9fafb;
         }
-        h1 {
-            text-align: center;
+        .exam-section {
+            transition: background-color 0.2s ease;
         }
-        h2 {
-            margin-top: 30px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: blue;
-        }
-        .coming-soon {
-            color: red;
-            font-weight: bold;
+        .exam-section:hover {
+            background-color: #f3f4f6;
         }
     </style>
 </head>
-<body>
-    <h1>Peanut Mock Exam Collection</h1>
-    
-    <h2>2nd Year (2nd Semester) Midterm Exams</h2>
-    <ul>
-        <li>
-            <a href="http://npwitk.com/mock-exam/CSS221_Midterm_Mock_Exam.pdf">CSS221_Midterm_Mock_Exam</a>
-            - Computer Graphics and Applications
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/CSS225_Midterm_Mock_Exam.pdf">CSS225_Midterm_Mock_Exam</a>
-            - Operating System
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/CSS332_Midterm_Mock_Exam.pdf">CSS332_Midterm_Mock_Exam</a>
-            - Microcontrollers and Applications
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/DES227_Midterm_Mock_Exam.pdf">DES227_Midterm_Mock_Exam</a>
-            - Algorithm Design
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/DES229_Midterm_Mock_Exam.pdf">DES229_Midterm_Mock_Exam</a>
-            - Human Computer Interface Design (HCI)
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/EES216_Midterm_Mock_Exam.pdf">EES216_Midterm_Mock_Exam</a>
-            - Circuit Analysis
-        </li>
-    </ul>
-    
-    <h2>2nd Year (1st Semester) Final Exams</h2>
-    <ul>
-        <li>
-            <a href="http://npwitk.com/mock-exam/DES201_Final_Mock_Exam.pdf">DES201_Final_Mock_Exam</a>
-            - Discrete Mathematics
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/DES221_Final_Mock_Exam.pdf">DES221_Final_Mock_Exam</a>
-            - Data Structures and Algorithms
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/EES271_Final_Mock_Exam.pdf">EES271_Final_Mock_Exam</a>
-            - Digital Circuits
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/GTS210_Final_Mock_Exam.pdf">GTS210_Final_Mock_Exam</a>
-            - Mathematics for Technologists III
-        </li>
-        <li>
-            <a href="http://npwitk.com/mock-exam/GTS231_Final_Mock_Exam.pdf">GTS231_Final_Mock_Exam</a>
-            - Law and Technology
-        </li>
-    </ul>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto px-4 py-8 max-w-2xl">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Peanut Mock Exam Collection</h1>
+        </header>
+
+        <div class="space-y-8">
+            <section>
+                <h2 class="text-xl font-semibold text-gray-700 mb-4 border-b pb-2">
+                    2nd Year (2nd Semester) Midterm Exams
+                </h2>
+                <div class="space-y-3">
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/CSS221_Midterm_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            CSS221 - Computer Graphics and Applications
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/CSS225_Midterm_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            CSS225 - Operating System
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/CSS332_Midterm_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            CSS332 - Microcontrollers and Applications
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/DES227_Midterm_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            DES227 - Algorithm Design
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/DES229_Midterm_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            DES229 - Human Computer Interface Design (HCI)
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/EES216_Midterm_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            EES216 - Circuit Analysis
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-gray-700 mb-4 border-b pb-2">
+                    2nd Year (1st Semester) Final Exams
+                </h2>
+                <div class="space-y-3">
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/DES201_Final_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            DES201 - Discrete Mathematics
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/DES221_Final_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            DES221 - Data Structures and Algorithms
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/EES271_Final_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            EES271 - Digital Circuits
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/GTS210_Final_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            GTS210 - Mathematics for Technologists III
+                        </a>
+                    </div>
+                    <div class="exam-section p-3 rounded-md">
+                        <a href="http://npwitk.com/mock-exam/GTS231_Final_Mock_Exam.pdf" 
+                           class="text-blue-600 hover:text-blue-800 font-medium">
+                            GTS231 - Law and Technology
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
