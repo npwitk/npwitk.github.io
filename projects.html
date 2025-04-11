@@ -1,151 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Projects</title>
-  <style>
-    /* visionOS inspired styles */
-    :root {
-      --accent-color: rgba(0, 122, 255, 0.8);
-      --glass-bg: rgba(255, 255, 255, 0.7);
-      --glass-border: rgba(255, 255, 255, 0.3);
-      --glass-shadow: rgba(0, 0, 0, 0.05);
-    }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Helvetica Neue', sans-serif;
-      background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
-      color: #1d1d1f;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .container {
-      max-width: 800px;
-      padding: 3rem;
-      background: var(--glass-bg);
-      backdrop-filter: blur(12px);
-      border-radius: 20px;
-      border: 1px solid var(--glass-border);
-      box-shadow: 0 8px 32px var(--glass-shadow);
-      text-align: center;
-      margin: 2rem;
-    }
-    
-    h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: -0.5px;
-    }
-    
-    p {
-      font-size: 1.2rem;
-      color: #1d1d1f;
-      max-width: 600px;
-      margin: 1rem auto;
-    }
-    
-    .coming-soon {
-      font-weight: 500;
-      color: #86868b;
-      margin: 1.5rem 0;
-      font-size: 1.3rem;
-      letter-spacing: -0.2px;
-    }
-    
-    .project-card {
-      background: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(8px);
-      border-radius: 16px;
-      padding: 2rem;
-      margin: 2rem 0;
-      border: 1px solid var(--glass-border);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    }
-    
-    .project-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--accent-color);
-    }
-    
-    .project-description {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .cta-button {
-      display: inline-block;
-      background: var(--accent-color);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 50px;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      border: none;
-      font-size: 1rem;
-    }
-    
-    .cta-button:hover {
-      background: rgba(0, 122, 255, 1);
-      transform: scale(1.05);
-    }
-    
-    .links {
-      margin-top: 3rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-    
-    .links a {
-      color: var(--accent-color);
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 20px;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-    
-    .links a:hover {
-      background: rgba(0, 122, 255, 0.1);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+<style>
+/* Modern Apple-inspired styles */
+:root {
+  --accent-color: #0071e3;
+  --bg-color: #f5f5f7;
+  --card-bg: #ffffff;
+  --text-primary: #1d1d1f;
+  --text-secondary: #86868b;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+p {
+  font-size: 20px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.project-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain; /* Changed to contain for transparent PNGs */
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)); /* Better for transparent PNGs than box-shadow */
+}
+
+.project-title2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+  margin-left: 16px;
+}
+
+.project-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.badge {
+  display: inline-block;
+  background: #f5f5f7;
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--accent-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: #0062cc;
+}
+
+.app-store-button {
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.app-store-button:hover {
+  transform: scale(1.01);
+}
+
+.app-store-button img {
+  height: 44px;
+  width: auto;
+}
+
+.links {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+.links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #0062cc;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+</style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
+  <header>
     <h1>My Projects</h1>
-    <p>A collection of project I've been working on!.</p>
-    
+    <p>A collection of projects I've been working on. Explore my work across web development, mobile apps, and educational tools.</p>
+  </header>
+
+  <div class="projects-grid">
     <div class="project-card">
-      <div class="project-title">Mock Exam</div>
-      <p class="project-description">Exam preparation for SIIT students.</p>
-      <a href="https://www.npwitk.com/mock" class="cta-button">Explore</a>
+      <div class="project-content">
+        <div class="project-icon-wrapper">
+          <div class="project-title2">Mock Exam</div>
+        </div>
+        <p class="project-description">Comprehensive exam preparation platform designed specifically for SIIT students.</p>
+        <div class="badges">
+          <span class="badge">Mock Exam</span>
+          <span class="badge">SIIT</span>
+        </div>
+        <a href="https://www.npwitk.com/mock" class="cta-button">Explore</a>
+      </div>
     </div>
-    
-    <p class="coming-soon"><strong>More projects coming soon</strong></p>
-    
-    <div class="links">
-      <a href="https://github.com/npwitk">GitHub</a>
-      <a href="https://linkedin.com/in/npwitk">LinkedIn</a>
+
+    <div class="project-card">
+      <div class="project-content">
+        <div class="project-icon-wrapper">
+          <img src="assets/project/color-master-app.png" alt="Color Master" class="project-icon">
+          <div class="project-title">Color Master</div>
+        </div>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
+        <div class="badges">
+          <span class="badge">Education</span>
+          <span class="badge">Color</span>
+        </div>
+        <a href="https://apps.apple.com/th/app/colour-master/id6450627284" class="app-store-button">
+          <img src="assets/project/download_badge.svg" alt="Download on App Store">
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <div class="project-icon-wrapper">
+          <img src="assets/project/gts231-law-study-app.png" alt="GTS231 Law Study" class="project-icon">
+          <div class="project-title">GTS231 Law Study</div>
+        </div>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
+        <div class="badges">
+          <span class="badge">Education</span>
+          <span class="badge">Law</span>
+        </div>
+        <a href="https://apps.apple.com/th/app/gts231-law-study/id6738602256" class="app-store-button">
+          <img src="assets/project/download_badge.svg" alt="Download on App Store">
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <div class="project-icon-wrapper">
+          <img src="assets/project/gate-genius-app.png" alt="Gate Genius" class="project-icon">
+          <div class="project-title">Gate Genius</div>
+        </div>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
+        <div class="badges">
+          <span class="badge">Education</span>
+          <span class="badge">Logic Gate</span>
+        </div>
+        <a href="https://apps.apple.com/th/app/gate-genius/id6743524610" class="app-store-button">
+          <img src="assets/project/download_badge.svg" alt="Download on App Store">
+        </a>
+      </div>
     </div>
   </div>
+
+  <div class="links">
+    <a href="https://github.com/npwitk">GitHub</a>
+    <a href="https://linkedin.com/in/npwitk">LinkedIn</a>
+  </div>
+
+  <footer>
+  </footer>
+</div>
 </body>
 </html>
