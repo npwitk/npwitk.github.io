@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Peanut Mock Exam Collection</title>
 <style>
-
 :root {
   --accent-color: #0071e3;
   --bg-color: #f5f5f7;
@@ -117,6 +116,49 @@ footer {
   color: var(--text-secondary);
   font-size: 14px;
 }
+
+.hstack {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.set-item {
+  flex: 1;
+  min-width: 150px;
+  padding: 12px;
+  background-color: rgba(0, 113, 227, 0.05);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.set-item:hover {
+  background-color: rgba(0, 113, 227, 0.1);
+}
+
+.set-title {
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.file-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .hstack {
+    flex-direction: column;
+  }
+  
+  .set-item {
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -135,7 +177,29 @@ footer {
 
       <div class="exam-item">
         <span class="exam-title">CSS221 - Computer Graphics and Applications Lab</span>
-        <span class="coming-soon">Coming Soon (Expected: April 27, 2025)</span>
+        <div class="hstack">
+          <div class="set-item">
+            <div class="set-title">Set 1</div>
+            <div class="file-links">
+              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set1.pdf" class="exam-link">Problem (PDF)</a>
+              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set1.nb" class="exam-link">Solution (NB)</a>
+            </div>
+          </div>
+          <div class="set-item">
+            <div class="set-title">Set 2</div>
+            <div class="file-links">
+              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set2.pdf" class="exam-link">Problem (PDF)</a>
+              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set2.nb" class="exam-link">Solution (NB)</a>
+            </div>
+          </div>
+          <div class="set-item">
+            <div class="set-title">Set 3</div>
+            <div class="file-links">
+              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set3.pdf" class="exam-link">Problem (PDF)</a>
+              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set3.nb" class="exam-link">Solution (NB)</a>
+            </div>
+          </div>
+        </div>
       </div>
       
       <div class="exam-item">
