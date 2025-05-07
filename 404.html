@@ -1,61 +1,109 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-  
-body {top: 0; left: 0; width: 99%; height: 97%;
-position: absolute; display: table}
-p {display: table-cell; vertical-align: middle; text-align: center; line-height: 1.5}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <meta http-equiv="refresh" content="6;url=https://www.npwitk.com" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #ffffff;
+            color: #1d1d1f;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.47059;
+            letter-spacing: -0.022em;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        
+        .error-code {
+            font-size: 96px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+            letter-spacing: -0.015em;
+        }
+        
+        .error-text {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        
+        .error-description {
+            font-size: 17px;
+            color: #86868b;
+            margin-bottom: 35px;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .redirect-text {
+            font-size: 14px;
+            color: #86868b;
+            margin-top: 40px;
+        }
+        
+        .links {
+            margin-top: 20px;
+        }
+        
+        .home-button {
+            display: inline-block;
+            background-color: #0071e3;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 8px 18px;
+            border-radius: 980px;
+            transition: all 0.2s ease;
+        }
+        
+        .home-button:hover {
+            background-color: #0077ED;
+        }
+        
+        .timer {
+            font-weight: 400;
+        }
+    </style>
 </head>
-<script src="https://npwitk.com/assets/js/countdown.js"></script>
-<body class="mydiv">
-<title>Page Not Found</title>
-<p>
-
-<link rel="stylesheet" href="https://npwitk.com/assets/css/error.css">
-<link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-<link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-
-<meta http-equiv="refresh" content="6;url=https://www.npwitk.com" />
-<font size="30" data-text="404"><b>404</b></font>
-<br> Page Not Found
-<br>
-<a href="https://npwitk.com" style="color: white; text-decoration: none;">Redirect to Homepage in <a id="timer_div" style="color: white"></a></a>
-<div class="stars">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-</div>
-
-</p>
-</body>  
+<body>
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-text">Page not found</h2>
+        <p class="error-description">What are you doing hereeee?</p>
+        
+        <div class="links">
+            <a href="https://npwitk.com" class="home-button">Go to Home Page</a>
+        </div>
+        
+        <p class="redirect-text">
+            You'll be redirected to my homepage in <span id="timer_div" class="timer">6</span> seconds
+        </p>
+    </div>
+    
+    <script src="countdown.js"></script>
+</body>
 </html>
