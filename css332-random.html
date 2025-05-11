@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Problem</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Define the problems
+        const problems = [
+            "Problem 1",
+            "Problem 2",
+            "Problem 3",
+            "Problem 4"
+        ];
+        
+        // Generate a random index
+        const randomIndex = Math.floor(Math.random() * problems.length);
+        
+        // Get the problem at the random index
+        const randomProblem = problems[randomIndex];
+        
+        // Display in an alert immediately when the page loads
+        window.onload = function() {
+            alert(randomProblem);
+        };
+    </script>
+</body>
+</html>
