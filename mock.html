@@ -6,6 +6,7 @@
 <title>Peanut Mock Exam Collection</title>
 <style>
 :root {
+  /* Light mode (default) */
   --accent-color: #0071e3;
   --bg-color: #f5f5f7;
   --card-bg: #ffffff;
@@ -14,6 +15,39 @@
   --shadow: rgba(0, 0, 0, 0.08);
   --coming-soon: #86868b;
   --link-color: #0071e3;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --item-bg: rgba(0, 0, 0, 0.02);
+  --item-hover-bg: rgba(0, 0, 0, 0.04);
+  --set-item-bg: rgba(0, 113, 227, 0.05);
+  --set-item-hover-bg: rgba(0, 113, 227, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode */
+    --accent-color: #2997ff;
+    --bg-color: #1a1a1a;
+    --card-bg: #2a2a2a;
+    --text-primary: #f5f5f7;
+    --text-secondary: #a1a1a6;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --coming-soon: #a1a1a6;
+    --link-color: #2997ff;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --item-bg: rgba(255, 255, 255, 0.05);
+    --item-hover-bg: rgba(255, 255, 255, 0.08);
+    --set-item-bg: rgba(41, 151, 255, 0.1);
+    --set-item-hover-bg: rgba(41, 151, 255, 0.15);
+  }
+}
+
+/* Transition for smooth mode switching */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section, .exam-item, .set-item {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 body {
@@ -65,7 +99,7 @@ header p {
   color: var(--text-primary);
   margin-bottom: 20px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .exam-list {
@@ -77,11 +111,11 @@ header p {
   padding: 16px;
   border-radius: 12px;
   transition: all 0.2s ease;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: var(--item-bg);
 }
 
 .exam-item:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--item-hover-bg);
   transform: translateY(-2px);
 }
 
@@ -131,14 +165,14 @@ footer {
   flex: 1;
   min-width: 150px;
   padding: 12px;
-  background-color: rgba(0, 113, 227, 0.05);
+  background-color: var(--set-item-bg);
   border-radius: 8px;
   text-align: center;
   box-sizing: border-box;
 }
 
 .set-item:hover {
-  background-color: rgba(0, 113, 227, 0.1);
+  background-color: var(--set-item-hover-bg);
 }
 
 .set-title {
@@ -152,6 +186,8 @@ footer {
   flex-direction: column;
   gap: 8px;
 }
+
+/* Theme toggle switch styles */
 
 @media (max-width: 600px) {
   .hstack {
@@ -172,6 +208,10 @@ footer {
   
   .section {
     padding: 20px 15px;
+  }
+  
+  h1 {
+    font-size: 28px;
   }
 }
 </style>
@@ -208,21 +248,8 @@ footer {
               <a href="https://github.com/npwitk/CSS221-Computer-Graphics-and-Applications/blob/main/Exam/Lab%20Mock%20Exam/Set2.nb" class="exam-link">Solution (NB)</a>
             </div>
           </div>
-          <!-- <div class="set-item">
-            <div class="set-title">Set 3</div>
-            <div class="file-links">
-              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set3.pdf" class="exam-link">Problem (PDF)</a>
-              <a href="http://npwitk.com/mock-exam/CSS221_Lab_Set3.nb" class="exam-link">Solution (NB)</a>
-            </div>
-          </div> -->
         </div>
       </div>
-
-      
-      <!-- <div class="exam-item">
-        <span class="exam-title">CSS225 - Operating System</span>
-        <span class="coming-soon">Coming Soon (Expected: May 21, 2025)</span>
-      </div> -->
 
       <div class="exam-item">
         <a href="http://npwitk.com/mock-exam/CSS225_Final_Mock_Exam.pdf" class="exam-link">
@@ -332,6 +359,9 @@ footer {
     </div>
   </div>
 
+  <!-- <footer>
+    <p>© 2025 Peanut Mock Exam Collection</p>
+  </footer> -->
 </div>
 </body>
 </html>
