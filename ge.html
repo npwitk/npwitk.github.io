@@ -330,6 +330,13 @@
                 software: ["Canva", "Procreate"],
                 skills: ["ออกแบบโปสเตอร์", "วาด illustration", "ทำ layout / infographic"],
                 note: ""
+            },
+            {
+                name: "เพียงออ",
+                role: "graphic",
+                software: ["Adobe Illustrator", "Canva"],
+                skills: ["ออกแบบโปสเตอร์", "ทำ layout / infographic"],
+                note: ""
             }
         ];
 
@@ -384,10 +391,10 @@
         function applyFilters() {
             filteredMembers = teamMembers.filter(member => {
                 const programMatch = selectedPrograms.length === 0 || 
-                    selectedPrograms.some(program => member.software.includes(program));
+                    selectedPrograms.every(program => member.software.includes(program));
                 
                 const skillMatch = selectedSkills.length === 0 || 
-                    selectedSkills.some(skill => member.skills.includes(skill));
+                    selectedSkills.every(skill => member.skills.includes(skill));
 
                 return programMatch && skillMatch;
             });
@@ -409,7 +416,7 @@
 
             grid.style.display = 'grid';
             noResults.style.display = 'none';
-            resultsCount.textContent = `พบ ${filteredMembers.length} คน`;
+            resultsCount.textContent = `เจอคนเก่งทั้งหมด ${filteredMembers.length} คน`;
 
             grid.innerHTML = filteredMembers.map(member => `
                 <div class="team-card">
