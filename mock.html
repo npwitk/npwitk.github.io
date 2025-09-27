@@ -20,7 +20,7 @@
   --item-hover-bg: rgba(0, 0, 0, 0.04);
   --set-item-bg: rgba(0, 113, 227, 0.05);
   --set-item-hover-bg: rgba(0, 113, 227, 0.1);
-  --countdown-bg: linear-gradient(135deg, #ced817 0%, #e37011 100%);
+  --countdown-bg: linear-gradient(135deg, #ff1a1a 0%, #b30000 100%);
   --countdown-text: #ffffff;
 }
 
@@ -40,7 +40,7 @@
     --item-hover-bg: rgba(255, 255, 255, 0.08);
     --set-item-bg: rgba(41, 151, 255, 0.1);
     --set-item-hover-bg: rgba(41, 151, 255, 0.15);
-    --countdown-bg: linear-gradient(135deg, #4c6ef5 100%, #413774 100%);
+    --countdown-bg: linear-gradient(135deg, #ff3333 0%, #660000 100%);
     --countdown-text: #ffffff;
   }
 }
@@ -356,6 +356,54 @@ footer {
     <div class="countdown-date" id="exam-date">Loading...</div>
   </div>
 
+
+  <div class="section">
+    <h2 class="section-title">3rd Year (1st Semester) Final Exams</h2>
+    <div class="exam-list"> 
+      
+ <div class="exam-item">
+        <span class="exam-title">CSS321 - Theory of Computation</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+      <div class="exam-item">
+        <span class="exam-title">CSS322 - Scientific Computing</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+      <div class="exam-item">
+        <span class="exam-title">CSS324 - Artificial Intelligence</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+      <div class="exam-item">
+        <span class="exam-title">CSS325 - Database Systems</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+      <div class="exam-item">
+        <span class="exam-title">Database Programming Laboratory</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+      <div class="exam-item">
+        <span class="exam-title">CSS331 - Fundamentals of Data Communications</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+      <div class="exam-item">
+        <span class="exam-title">GTS302 - Technical Writing</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+      <div class="exam-item">
+        <span class="exam-title">LAS101 - Critical Thinking, Reading, and Writing</span>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+
+    </div>
+  </div>
+
 <div class="section">
     <h2 class="section-title">3rd Year (1st Semester) Midterm Exams</h2>
     <div class="exam-list"> 
@@ -558,38 +606,43 @@ footer {
 
 const examSchedule = [
   {
-    subject: "LAS101: Critical Thinking, Reading, and Writing",
-    date: new Date(2025, 8, 22, 9, 0), // September 22, 2025, 9:00 AM
-    time: "9:00 AM - 11:00 AM"
+    subject: "CSS321: Theory of Computation (Final)",
+    date: new Date(2025, 10, 24, 13, 30), // Nov 24, 2025, 1:30 PM
+    time: "1:30 PM - 4:30 PM"
   },
   {
-    subject: "CSS331: Fundamentals of Data Communications", 
-    date: new Date(2025, 8, 23, 9, 0), // September 23, 2025, 9:00 AM
-    time: "9:00 AM - 11:00 AM"
+    subject: "CSS331: Fundamentals of Data Communications (Final)", 
+    date: new Date(2025, 10, 25, 9, 0), // Nov 25, 2025, 9:00 AM
+    time: "9:00 AM - 12:00 PM"
   },
   {
-    subject: "GTS302: Technical Writing",
-    date: new Date(2025, 8, 24, 15, 0), // September 24, 2025, 3:00 PM
-    time: "3:00 PM - 5:00 PM"
+    subject: "CSS322: Scientific Computing (Final)",
+    date: new Date(2025, 10, 26, 13, 30), // Nov 26, 2025, 1:30 PM
+    time: "1:30 PM - 4:30 PM"
   },
   {
-    subject: "CSS321: Theory of Computation",
-    date: new Date(2025, 8, 25, 9, 0), // September 25, 2025, 9:00 AM
-    time: "9:00 AM - 11:00 AM"
+    subject: "GTS302: Technical Writing (Final)",
+    date: new Date(2025, 10, 27, 13, 30), // Nov 27, 2025, 1:30 PM
+    time: "1:30 PM - 4:30 PM"
   },
   {
-    subject: "CSS322: Scientific Computing",
-    date: new Date(2025, 8, 25, 15, 0), // September 25, 2025, 3:00 PM
-    time: "3:00 PM - 5:00 PM"
+    subject: "CSS324: Artificial Intelligence (Final)",
+    date: new Date(2025, 10, 28, 13, 30), // Nov 28, 2025, 1:30 PM
+    time: "1:30 PM - 4:30 PM"
   },
   {
-    subject: "CSS324: Artificial Intelligence",
-    date: new Date(2025, 8, 26, 12, 0), // September 26, 2025, 12:00 PM
-    time: "12:00 PM - 2:00 PM"
+    subject: "CSS325: Database Systems (Final)",
+    date: new Date(2025, 10, 29, 9, 0), // Nov 29, 2025, 9:00 AM
+    time: "9:00 AM - 12:00 PM"
   },
   {
-    subject: "CSS325: Database Systems",
-    date: new Date(2025, 8, 27, 9, 0), // September 27, 2025, 9:00 AM
+    subject: "LAS101: Critical Thinking, Reading, and Writing (Final)",
+    date: new Date(2025, 11, 1, 9, 0), // Dec 1, 2025, 9:00 AM
+    time: "9:00 AM - 12:00 PM"
+  },
+  {
+    subject: "CSS326: Database Programming Laboratory (Final)",
+    date: new Date(2025, 11, 2, 9, 0), // Dec 2, 2025, 9:00 AM
     time: "9:00 AM - 11:00 AM"
   }
 ];
