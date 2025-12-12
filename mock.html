@@ -333,7 +333,7 @@ footer {
 
   <!-- Countdown Timer -->
   <div class="countdown-container">
-    <div class="countdown-title">Next Final Exam (for 3rd year students)</div>
+    <div class="countdown-title">Next Midterm Exam (for 3rd year students)</div>
     <div class="countdown-subject" id="exam-subject">Loading...</div>
     <div class="countdown-timer">
       <div class="countdown-unit">
@@ -679,43 +679,33 @@ footer {
 
 const examSchedule = [
   {
-    subject: "CSS321: Theory of Computation (Final)",
-    date: new Date(2025, 10, 24, 13, 30), // Nov 24, 2025, 1:30 PM
-    time: "1:30 PM - 4:30 PM"
+    subject: "CSS334: Computer Network and Internetworking (Midterm)",
+    date: new Date(2026, 1, 23, 9, 0), // Feb 23, 2026, 9:00 AM
+    time: "9:00 AM - 11:00 AM"
   },
   {
-    subject: "CSS331: Fundamentals of Data Communications (Final)", 
-    date: new Date(2025, 10, 25, 9, 0), // Nov 25, 2025, 9:00 AM
-    time: "9:00 AM - 12:00 PM"
+    subject: "BAS357: Economic Decision Analysis (Midterm)",
+    date: new Date(2026, 1, 23, 15, 0), // Feb 23, 2026, 3:00 PM
+    time: "3:00 PM - 5:00 PM"
   },
   {
-    subject: "CSS322: Scientific Computing (Final)",
-    date: new Date(2025, 10, 26, 13, 30), // Nov 26, 2025, 1:30 PM
-    time: "1:30 PM - 4:30 PM"
+    subject: "CSS454: Computer and Communication Security (Midterm)",
+    date: new Date(2026, 1, 24, 9, 0), // Feb 24, 2026, 9:00 AM
+    time: "9:00 AM - 11:00 AM"
   },
   {
-    subject: "GTS302: Technical Writing (Final)",
-    date: new Date(2025, 10, 27, 13, 30), // Nov 27, 2025, 1:30 PM
-    time: "1:30 PM - 4:30 PM"
+    subject: "DES329: System Analysis and Design (Midterm)",
+    date: new Date(2026, 1, 25, 9, 0), // Feb 25, 2026, 9:00 AM
+    time: "9:00 AM - 11:00 AM"
   },
   {
-    subject: "CSS324: Artificial Intelligence (Final)",
-    date: new Date(2025, 10, 28, 13, 30), // Nov 28, 2025, 1:30 PM
-    time: "1:30 PM - 4:30 PM"
+    subject: "CSS451: Cloud Computing (Midterm)",
+    date: new Date(2026, 1, 25, 15, 0), // Feb 25, 2026, 3:00 PM
+    time: "3:00 PM - 5:00 PM"
   },
   {
-    subject: "CSS325: Database Systems (Final)",
-    date: new Date(2025, 10, 29, 9, 0), // Nov 29, 2025, 9:00 AM
-    time: "9:00 AM - 12:00 PM"
-  },
-  {
-    subject: "LAS101: Critical Thinking, Reading, and Writing (Final)",
-    date: new Date(2025, 11, 1, 9, 0), // Dec 1, 2025, 9:00 AM
-    time: "9:00 AM - 12:00 PM"
-  },
-  {
-    subject: "CSS326: Database Programming Laboratory (Final)",
-    date: new Date(2025, 11, 2, 9, 0), // Dec 2, 2025, 9:00 AM
+    subject: "CSS323: Software Engineering (Midterm)",
+    date: new Date(2026, 1, 26, 9, 0), // Feb 26, 2026, 9:00 AM
     time: "9:00 AM - 11:00 AM"
   }
 ];
@@ -737,7 +727,7 @@ function updateCountdown() {
   const nextExam = findNextExam();
   
   if (!nextExam) {
-    document.getElementById('exam-subject').textContent = 'All Final Exams Complete!';
+    document.getElementById('exam-subject').textContent = 'All Midterm Exams Complete!';
     document.getElementById('exam-date').textContent = 'Great job finishing all your exams!';
     document.getElementById('days').textContent = '0';
     document.getElementById('hours').textContent = '0';
